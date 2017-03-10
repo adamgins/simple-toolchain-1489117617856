@@ -6,7 +6,6 @@ declared-services:
 applications:
 - name:    buzzyAG
   host:    buzzyAG
-  domain: au-syd.mybluemix.net
   services:
     - mongodbbuzzy01
     
