@@ -1,0 +1,51 @@
+{
+  "name": "buzzy7",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "main": "mobile-config.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "engines" : {
+     "node": "4.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Buzzy-Buzz/buzzy7.git"
+  },
+  "author": "Adam Ginsburg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Buzzy-Buzz/buzzy7/issues"
+  },
+  "dependencies": {
+    "autolinker": "^1.4.0",
+    "aws-sdk": "2.0.0-rc9",
+    "babel-runtime": "^6.18.0",
+    "bcrypt": "^0.8.7",
+    "body-parser": "^1.15.2",
+    "connect-cookies": "0.0.0",
+    "currency-symbol-map": "^3.0.1",
+    "d3": "^3.5.14",
+    "eventie": "^1.0.6",
+    "fibers": "^1.0.14",
+    "get-style-property": "^0.1.1",
+    "giphy-api": "^1.2.3",
+    "html-truncate": "^1.2.1",
+    "ics-js": "^0.9.1",
+    "in-viewport": "^3.4.1",
+    "jquery": "^2.2.4",
+    "jquery-inview": "^1.1.2",
+    "meteor-node-stubs": "^0.2.3",
+    "s3-write-stream": "0.0.1",
+    "saml2-js": "^1.10.0",
+    "source-map-support": "^0.4.11",
+    "stripe": "^4.9.1",
+    "underscore": "^1.8.3",
+    "vimeo-api": "1.1.0",
+    "watson-developer-cloud": "^2.20.1",
+    "webshot": "0.15.3",
+    "wolfy87-eventemitter": "^4.3.0"
+  }
+}

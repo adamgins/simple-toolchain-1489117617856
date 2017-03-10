@@ -1,0 +1,498 @@
+{{#let currentUserID=toUserID topLevelResource=resource userCompletedSetup=completedSetup context=this currentMicroAppRowID=microAppRowID}}
+
+    <table class="content">
+        <!-- Email title -->
+        <tr>
+            <td class="content-header">
+                <div class="avatar-container"><img src="{{showUserProfileImage fromUserID}}" alt="Avatar" width="36"
+                                                   height="36" class="avatar"/></div>
+                <span class="user">{{userName}}</span>
+                <span class="action">
+                    {{#if isNew }}
+                        has invited you to a Buzz:
+                    {{else}}
+                        updated:
+                    {{/if}}
+                </span>
+                <h1 class="title">
+	                <a href="{{mainBuzzLink context resource._id mainLink}}">{{resource.title}}</a>
+	                {{#if isNew }}
+                        {{!-- Accept invitation: new and existing users --}}
+                        {{#with getCtaTopTitleInvite}}
+                        	<br />
+                            <a href="{{mainBuzzLink context topLevelResource._id this}}"
+                               style="background-color:{{bg}};border:1px solid {{border}};border-radius:3px;color:#ffffff;display:inline-block;font-family:Lato,Tahoma,sans-serif;font-size:16px;font-weight:bold;line-height:24px;text-align:center;text-decoration:none;min-width:216px;-webkit-text-size-adjust:none;">
+                                {{{message}}}
+                            </a>
+                        {{/with}}
+                    {{else}}
+                        {{!-- View on Buzzy: new and existing users --}}
+                        {{#with getCtaTopTitleUpdate}}
+                        	<br />
+                            <a href="{{mainBuzzLink context topLevelResource._id this}}"
+                               style="background-color:{{bg}};border:1px solid {{border}};border-radius:3px;color:#ffffff;display:inline-block;font-family:Lato,Tahoma,sans-serif;font-size:16px;font-weight:bold;line-height:24px;text-align:center;text-decoration:none;min-width:216px;-webkit-text-size-adjust:none;">
+                                {{{message}}}
+                            </a>
+                        {{/with}}
+                    {{/if}}
+	            </h1>
+            </td>
+        </tr>
+
+        <!-- Email body -->
+        <tr>
+            <td class="content-body">
+
+                <!-- ++++++++++++++++++++++++++++++ -->
+                <!-- RESOURCES -->
+                {{#each resources resourceIDs currentUserID}}
+                    {{#with singleResource this}}
+
+                        {{#if $eq type "embeddedBuzz" }}
+                           {{#with embeddedBuzzResources content.buzzID currentUserID}}
+                               {{#each resources this currentUserID}}
+                                   {{#with singleResource this}}
+
+
+                                       {{#if $eq type "application" }}
+                                       
+	                                        <!-- DT New -->
+				                            {{!-- Only show thead and rows/cells if there are rows --}}
+				                            {{#with getAppDataRow _id currentUserID currentMicroAppRowID}}
+				                            	<div class="resource">
+													<table>
+														<thead>
+															<tr>
+																<th colspan="100%">{{../title}}</th>
+															</tr>
+															<tr>
+																{{#each getAppFieldsNotCollapsed ../_id}}
+																	<th>{{label}}</th>
+																{{/each}}
+																{{#if getAppFieldsCollapsed ../_id}}
+																	<th style="width: 1%;"></th>
+																{{/if}}
+															</tr>	
+														</thead>	
+														<tbody>
+
+																<tr>
+																	{{#each getAppFieldsNotCollapsed ../_id}}
+																		<td>
+																			{{#with getAppFieldData ../_id _id}}
+																			   {{#if $eq fieldType "text"}}
+				                                                                   {{value}}
+				                                                               {{/if}}
+				                                                               {{#if $eq fieldType "submitted"}}
+				                                                                   {{formatDate ../../submitted "h:mm a D MMM YYYY ZZ" ../../../content.timezone}}
+				                                                               {{/if}}
+				                                                               {{#if $eq fieldType "author"}}
+				                                                                   {{../../author}}
+				                                                               {{/if}}
+                                                                                {{#if $eq fieldType "authorphone"}}
+                                                                                    {{getFirstMobile ../../userID}}
+                                                                                {{/if}}
+				                                                               {{#if $eq fieldType "datetime"}}
+				                                                                   {{#if $eq ../option.type "event"}}
+				                                                                       {{#if (dateDiffDays value.start value.end)}}
+				                                                                           {{formatDate value.start "h:mm a D MMM YYYY" ../../../content.timezone}}
+				                                                                           to {{formatDate value.end "h:mm a D MMM YYYY Z" ../../../content.timezone}}
+				                                                                       {{else}}
+				                                                                           {{formatDate value.start "h:mm a" ../../../content.timezone}}
+				                                                                           to {{formatDate value.end "h:mm a D MMM YYYY Z" ../../../content.timezone}}
+				                                                                       {{/if}}
+				                                                                   {{else}}
+				                                                                       {{formatDate value ../option.format ../../../content.timezone}}
+				                                                                   {{/if}}
+				                                                               {{/if}}
+				                                                               {{#if $eq fieldType "event"}}
+				                                                                   {{#if value.title}}
+				                                                                       <strong>{{value.title}}</strong><br>
+				                                                                   {{/if}}
+				                                                                   {{#if value.location}}
+				                                                                       {{value.location.formatted_address}}<br>
+				                                                                   {{/if}}
+				                                                                   {{#if (dateDiffDays value.start value.end)}}
+				                                                                       {{formatDate value.start "h:mm a D MMM YYYY" ../../../content.timezone}}
+				                                                                       to {{formatDate value.end "h:mm a D MMM YYYY Z" ../../../content.timezone}}
+				                                                                   {{else}}
+				                                                                       {{formatDate value.start "h:mm a" ../../../content.timezone}}
+				                                                                       to {{formatDate value.end "h:mm a D MMM YYYY Z" ../../../content.timezone}}
+				                                                                   {{/if }}
+				                                                                   {{#if ../option.includeRSVP}}
+				                                                                       <br/>
+				                                                                       Please RSVP:<br/>
+				                                                                       {{#each showFieldVoteOptions _id}}
+				                                                                           <a href="{{voteLink currentUserID ../parentResourceID ../../../_id ../_id this}}">{{this}}</a><br/>
+				                                                                       {{/each}}
+				                                                                   {{/if}}
+				                                                               {{/if}}
+				                                                               {{#if $eq fieldType "checkbox"}}
+				                                                                   {{#if value}}
+				                                                                       <span title="Checked">[Y]</span>
+				                                                                   {{else}}
+				                                                                       <span title="Not checked">[N]</span>
+				                                                                   {{/if}}
+				                                                               {{/if}}
+				                                                               {{#if $eq fieldType "select"}}
+				                                                                   {{value}}
+				                                                               {{/if}}
+				                                                               {{#if $eq fieldType "rating"}}
+				                                                                   {{#if value}}
+				                                                                       {{value}}/5
+				                                                                   {{else}}
+				                                                                       Not rated
+				                                                                   {{/if}}
+				                                                               {{/if}}
+				                                                               {{#if $eq fieldType "uservote"}}
+				                                                                   Click a link to choose an option:<br/>
+				                                                                   {{#each showFieldVoteOptions _id}}
+				                                                                       <a href="{{voteLink currentUserID ../parentResourceID ../../../_id ../_id this}}">{{this}}</a><br/>
+				                                                                   {{/each}}
+				                                                               {{/if}}
+				                                                               {{#if $eq fieldType "payment"}}
+				                                                                   {{#if userCompletedSetup }}
+				                                                                       {{#with getCtaInviteExistingUser}}
+				                                                                           <a href="{{mainBuzzLink context topLevelResource._id mainLink}}"
+				                                                                              class="btn-resource {{../value.style}}">
+				                                                                               {{../value.label}}
+				                                                                           </a>
+				                                                                           <span class="caption text-center">
+				                                                                               {{../value.buttonHelp}}
+				                                                                           </span>
+				                                                                       {{/with}}
+				                                                                   {{else}}
+				                                                                       {{#with getCtaInviteNewUser}}
+				                                                                           <a href="{{mainBuzzLink context topLevelResource._id mainLink}}"
+				                                                                              class="btn-resource {{../value.style}}">
+				                                                                               {{../value.label}}
+				                                                                           </a>
+				                                                                           <span class="caption text-center">
+				                                                                               {{../value.buttonHelp}}
+				                                                                           </span>
+				                                                                       {{/with}}
+				
+				                                                                   {{/if}}
+				                                                               {{/if}}
+				                                                               {{#if $eq fieldType "attachments"}}
+				                                                                   {{#each value}}
+				                                                                       <a href="{{this.url}}"><img src="https://buzzy.buzz/assets/email/icon-file.png" class="icon" alt="[attachments]"/></a><br/>
+				                                                                   {{/each}}
+				                                                               {{/if}}
+				                                                               {{#if $eq fieldType "files"}}
+				                                                                   {{#each microAppChildren  currentUserID  topLevelResource._id _id ../../_id}}
+				                                                                       <a href="{{this.url}}"><img src="https://buzzy.buzz/assets/email/icon-file.png" class="icon" alt="[attachments]"/></a><br />
+				                                                                   {{/each}}
+				                                                               {{/if}}
+				                                                               {{#if $eq fieldType "images"}}
+				                                                                       <img src="{{value.galleryURL}}" class="image" alt="[image]"/><br/>
+				                                                                       {{#if userCompletedSetup }}
+				                                                                           {{#with getCtaInviteExistingUser}}
+				                                                                               {{#if ../value.additionalImageCount}}
+				                                                                                   <a href="{{mainBuzzLink context topLevelResource._id mainLink}}">Click to view
+				                                                                                       additional {{../value.additionalImageCount}} images on Buzzy.</a>
+				                                                                               {{/if}}
+				                                                                           {{/with}}
+				                                                                       {{else}}
+				                                                                           {{#with getCtaInviteNewUser}}
+				                                                                               {{#if ../value.additionalImageCount}}
+				                                                                                   <a href="{{mainBuzzLink context topLevelResource._id mainLink}}">Click to view
+				                                                                                       additional {{../value.additionalImageCount}} images on Buzzy.</a>
+				                                                                               {{/if}}
+				                                                                           {{/with}}
+				
+				                                                                       {{/if}}
+				                                                               {{/if}}
+																			{{/with}}
+																		</td>
+																	{{/each}}
+																	{{#if getAppFieldsCollapsed ../../_id}}
+																		<td>
+																			<a href="{{mainBuzzLink context topLevelResource._id 'microapp'}}">More...</a>
+																		</td>
+																	{{/if}}
+																</tr>
+
+														</tbody>
+														{{!-- show 'more' link; ideally would only display if pagination required, but don't have item count so leave as generic link --}}
+														<tfoot>
+															<tr>
+																<td colspan="100%" class="text-center">
+																	<a href="{{mainBuzzLink context topLevelResource._id 'microapp'}}">View more on Buzzy...</a>
+																</td>
+															</tr>
+														</tfoot>
+													</table>
+												</div>
+				                            {{else}}
+				                            	{{!-- If there are no rows, we need to only show a link --}}
+				                            	<div class="resource">
+													<table>
+														<thead>
+															<tr>
+																<th>{{title}}</th>
+															</tr>
+														</thead>	
+														<tbody>
+															<tr>
+																<td>
+																	<a href="{{mainBuzzLink context topLevelResource._id 'microapp'}}">View on Buzzy</a>
+																</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+				                            {{/with}}
+				                            <!-- // DT New -->
+                                       {{/if}}
+
+
+                                   {{/with}}
+                               {{/each}}
+                           {{/with}}
+                        {{/if}}
+
+                        {{#if $eq type "application" }}
+                        
+                        	<!-- DT New -->
+                            {{!-- Only show thead and rows/cells if there are rows --}}
+                            {{#with getAppDataRow _id currentUserID currentMicroAppRowID}}
+                            	<div class="resource">
+									<table>
+										<thead>
+											<tr>
+												<th colspan="100%">{{../title}}</th>
+											</tr>
+											<tr>
+
+												{{#each getAppFieldsNotCollapsed ../_id}}
+													<th>{{label}}</th>
+												{{/each}}
+												{{#if getAppFieldsCollapsed ../_id}}
+													<th style="width: 1%;"></th>
+												{{/if}}
+											</tr>	
+										</thead>	
+										<tbody>
+												<tr>
+													{{#each getAppFieldsNotCollapsed ../_id}}
+														<td>
+															{{#with getAppFieldData ../_id _id}}
+															   {{#if $eq fieldType "text"}}
+                                                                   {{value}}
+                                                               {{/if}}
+                                                               {{#if $eq fieldType "submitted"}}
+                                                                   {{formatDate ../../submitted "h:mm a D MMM YYYY ZZ" ../../../content.timezone}}
+                                                               {{/if}}
+                                                               {{#if $eq fieldType "author"}}
+                                                                   {{../../author}}
+                                                               {{/if}}
+                                                                {{#if $eq fieldType "authorphone"}}
+                                                                    {{getFirstMobile ../../userID}}
+                                                                {{/if}}
+                                                               {{#if $eq fieldType "datetime"}}
+                                                                   {{#if $eq ../option.type "event"}}
+                                                                       {{#if (dateDiffDays value.start value.end)}}
+                                                                           {{formatDate value.start "h:mm a D MMM YYYY" ../../../content.timezone}}
+                                                                           to {{formatDate value.end "h:mm a D MMM YYYY Z" ../../../content.timezone}}
+                                                                       {{else}}
+                                                                           {{formatDate value.start "h:mm a" ../../../content.timezone}}
+                                                                           to {{formatDate value.end "h:mm a D MMM YYYY Z" ../../../content.timezone}}
+                                                                       {{/if}}
+                                                                   {{else}}
+                                                                       {{formatDate value ../option.format ../../../content.timezone}}
+                                                                   {{/if}}
+                                                               {{/if}}
+                                                               {{#if $eq fieldType "event"}}
+                                                                   {{#if value.title}}
+                                                                       <strong>{{value.title}}</strong><br>
+                                                                   {{/if}}
+                                                                   {{#if value.location}}
+                                                                       {{value.location.formatted_address}}<br>
+                                                                   {{/if}}
+                                                                   {{#if (dateDiffDays value.start value.end)}}
+                                                                       {{formatDate value.start "h:mm a D MMM YYYY" ../../../content.timezone}}
+                                                                       to {{formatDate value.end "h:mm a D MMM YYYY Z" ../../../content.timezone}}
+                                                                   {{else}}
+                                                                       {{formatDate value.start "h:mm a" ../../../content.timezone}}
+                                                                       to {{formatDate value.end "h:mm a D MMM YYYY Z" ../../../content.timezone}}
+                                                                   {{/if }}
+                                                                   {{#if ../option.includeRSVP}}
+                                                                       <br/>
+                                                                       Please RSVP:<br/>
+                                                                       {{#each showFieldVoteOptions _id}}
+                                                                           <a href="{{voteLink currentUserID ../parentResourceID ../../../_id ../_id this}}">{{this}}</a><br/>
+                                                                       {{/each}}
+                                                                   {{/if}}
+                                                               {{/if}}
+                                                               {{#if $eq fieldType "checkbox"}}
+                                                                   {{#if value}}
+                                                                       <span title="Checked">[Y]</span>
+                                                                   {{else}}
+                                                                       <span title="Not checked">[N]</span>
+                                                                   {{/if}}
+                                                               {{/if}}
+                                                               {{#if $eq fieldType "select"}}
+                                                                   {{value}}
+                                                               {{/if}}
+                                                               {{#if $eq fieldType "rating"}}
+                                                                   {{#if value}}
+                                                                       {{value}}/5
+                                                                   {{else}}
+                                                                       Not rated
+                                                                   {{/if}}
+                                                               {{/if}}
+                                                               {{#if $eq fieldType "uservote"}}
+                                                                   Click a link to choose an option:<br/>
+                                                                   {{#each showFieldVoteOptions _id}}
+                                                                       <a href="{{voteLink currentUserID ../parentResourceID ../../../_id ../_id this}}">{{this}}</a><br/>
+                                                                   {{/each}}
+                                                               {{/if}}
+                                                               {{#if $eq fieldType "payment"}}
+                                                                   {{#if userCompletedSetup }}
+                                                                       {{#with getCtaInviteExistingUser}}
+                                                                           <a href="{{mainBuzzLink context topLevelResource._id mainLink}}"
+                                                                              class="btn-resource {{../value.style}}">
+                                                                               {{../value.label}}
+                                                                           </a>
+                                                                           <span class="caption text-center">
+                                                                               {{../value.buttonHelp}}
+                                                                           </span>
+                                                                       {{/with}}
+                                                                   {{else}}
+                                                                       {{#with getCtaInviteNewUser}}
+                                                                           <a href="{{mainBuzzLink context topLevelResource._id mainLink}}"
+                                                                              class="btn-resource {{../value.style}}">
+                                                                               {{../value.label}}
+                                                                           </a>
+                                                                           <span class="caption text-center">
+                                                                               {{../value.buttonHelp}}
+                                                                           </span>
+                                                                       {{/with}}
+
+                                                                   {{/if}}
+                                                               {{/if}}
+                                                               {{#if $eq fieldType "attachments"}}
+                                                                   {{#each value}}
+                                                                       <a href="{{this.url}}"><img src="https://buzzy.buzz/assets/email/icon-file.png" class="icon" alt="[attachments]"/></a><br/>
+                                                                   {{/each}}
+                                                               {{/if}}
+                                                               {{#if $eq fieldType "files"}}
+                                                                   {{#each microAppChildren  currentUserID  topLevelResource._id _id ../../_id}}
+                                                                       <a href="{{this.url}}"><img src="https://buzzy.buzz/assets/email/icon-file.png" class="icon" alt="[attachments]"/></a><br />
+                                                                   {{/each}}
+                                                               {{/if}}
+                                                               {{#if $eq fieldType "images"}}
+                                                                       <img src="{{value.galleryURL}}" class="image" alt="[image]"/><br/>
+                                                                       {{#if userCompletedSetup }}
+                                                                           {{#with getCtaInviteExistingUser}}
+                                                                               {{#if ../value.additionalImageCount}}
+                                                                                   <a href="{{mainBuzzLink context topLevelResource._id mainLink}}">Click to view
+                                                                                       additional {{../value.additionalImageCount}} images on Buzzy.</a>
+                                                                               {{/if}}
+                                                                           {{/with}}
+                                                                       {{else}}
+                                                                           {{#with getCtaInviteNewUser}}
+                                                                               {{#if ../value.additionalImageCount}}
+                                                                                   <a href="{{mainBuzzLink context topLevelResource._id mainLink}}">Click to view
+                                                                                       additional {{../value.additionalImageCount}} images on Buzzy.</a>
+                                                                               {{/if}}
+                                                                           {{/with}}
+
+                                                                       {{/if}}
+                                                               {{/if}}
+															{{/with}}
+														</td>
+													{{/each}}
+													{{#if getAppFieldsCollapsed ../../_id}}
+														<td>
+															<a href="{{mainBuzzLink context topLevelResource._id 'microapp'}}">More...</a>
+														</td>
+													{{/if}}
+												</tr>
+
+										</tbody>
+										{{!-- show 'more' link; ideally would only display if pagination required, but don't have item count so leave as generic link --}}
+										<tfoot>
+											<tr>
+												<td colspan="100%" class="text-center">
+													<a href="{{mainBuzzLink context topLevelResource._id 'microapp'}}">View more on Buzzy...</a>
+												</td>
+											</tr>
+										</tfoot>
+									</table>
+								</div>
+                            {{else}}
+                            	{{!-- If there are no rows, we need to only show a link --}}
+                            	<div class="resource">
+									<table>
+										<thead>
+											<tr>
+												<th>{{title}}</th>
+											</tr>
+										</thead>	
+										<tbody>
+											<tr>
+												<td>
+													<a href="{{mainBuzzLink context topLevelResource._id 'microapp'}}">View on Buzzy</a>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+                            {{/with}}
+                            <!-- // DT New -->
+                            
+                        {{/if}}
+
+
+                    {{/with}}
+                {{/each}}
+
+
+            </td>
+        </tr>
+		
+        <!-- Email CTA -->        
+        <tr>
+            <td class="content-calltoaction">
+                <div>
+                    {{#if userCompletedSetup }}
+                        {{#with getCtaInviteExistingUser}}
+                            <a href="{{mainBuzzLink context topLevelResource._id this}}"
+                               style="background-color:{{bg}};border:1px solid {{border}};border-radius:6px;color:#ffffff;display:inline-block;font-family:Lato,Tahoma,sans-serif;font-size:20px;font-weight:bold;line-height:48px;text-align:center;text-decoration:none;min-width:216px;width:100%;-webkit-text-size-adjust:none;">
+                                {{{message}}}
+                            </a>
+                        {{/with}}
+                    {{else}}
+                        {{#with getCtaInviteNewUser}}
+                            <a href="{{mainBuzzLink context topLevelResource._id this}}"
+                               style="background-color:{{bg}};border:1px solid {{border}};border-radius:6px;color:#ffffff;display:inline-block;font-family:Lato,Tahoma,sans-serif;font-size:20px;font-weight:bold;line-height:48px;text-align:center;text-decoration:none;min-width:216px;width:100%;-webkit-text-size-adjust:none;">
+                                {{{message}}}
+                            </a>
+                        {{/with}}
+                    {{/if}}
+                </div>
+            </td>
+        </tr>
+
+        <!-- Email footer -->
+        <tr>
+            <td class="content-footer">
+                <strong>Don’t want to receive these emails?</strong><br/>
+                <a href="{{unfollowURL topLevelResource._id}}">Stop receiving notifications from this Buzz</a>
+            </td>
+        </tr>
+        <tr>
+            <td class="content-footer promo">
+                {{#if userCompletedSetup }}
+                    {{{getPromoInviteExistingUser}}}
+                {{else}}
+                    {{{getPromoInviteNewUser}}}
+                {{/if}}
+            </td>
+        </tr>
+
+    </table>
+    <img src="{{viewURLResource topLevelResource._id currentUserID}}" height="1" width="1"/>
+{{/let}}

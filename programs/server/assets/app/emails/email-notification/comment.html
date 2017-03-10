@@ -1,0 +1,351 @@
+{{#let currentUserID=toUserID currentComment=comment userCompletedSetup=completedSetup context=this}}
+    <table class="content">
+
+        <!-- Email title -->
+        <tr>
+            <td class="content-header">
+                <div class="avatar-container"><img src="{{showUserProfileImage comment.userID}}" alt="Avatar" width="36" height="36" class="avatar" /></div>
+                <span class="user">{{comment.author}}</span>
+                <span class="action">commented:</span>
+            </td>
+        </tr>
+
+        <!-- Email body -->
+        <tr>
+            <td class="content-body">
+                <div class="comment-arrow"></div>
+                <table class="comments">
+                    <tr>
+                        <td class="comment">
+
+                            {{#if comment.message}}
+                                {{{comment.message}}}
+                            {{/if}}
+
+                            {{#with comment.extraContent}}
+                                {{#if isArray this}}
+                                    {{#each this}}
+                                        {{#if $eq type "googlemap"}}
+                                            <p class="resource">
+                                                <a href="{{locationSearch content.coords}}">
+                                                    <img src="https://buzzy.buzz/assets/email/icon-map.png"
+                                                         class="icon" alt="[map]"/>
+                                                    <span class="name">{{locationSearch content.coords}}</span>
+                                                </a>
+                                                <!--<span class="caption">Optional caption could go here...</span>-->
+                                            </p>
+
+                                        {{/if}}
+                                        {{#if $eq type "video"}}
+                                            <p class="resource">
+
+                                                <a href="{{commentLink currentComment.topLevelParentID _id userCompletedSetup context}}">
+                                                    <img src="https://buzzy.buzz/assets/email/icon-video.png"
+                                                         class="icon" alt="[video]"/>
+                                                    <span class="name">Click link to to play video on Buzzy</span>
+                                                </a>
+                                                {{#if content.caption}}
+                                                    <span class="caption">{{content.caption}}</span>
+                                                {{/if}}
+                                            </p>
+                                        {{/if}}
+                                        {{#if $eq type "link"}}
+                                            <p class="resource">
+                                                <a href="{{content.originalLink}}">
+                                                    <img src="https://buzzy.buzz/assets/email/icon-link.png"
+                                                         class="icon" alt="[link]"/>
+                                                    {{#if content.title}}
+                                                        <span class="name">{{content.title}}</span>
+                                                    {{else}}
+                                                        <span class="name">{{truncateURL content.originalLink}}</span>
+                                                    {{/if}}
+                                                    <span class="meta">{{content.site_name}}</span>
+                                                </a>
+                                                {{#if content.caption}}
+                                                    <span class="caption">{{content.caption}}</span>
+                                                {{/if}}
+                                            </p>
+                                        {{/if}}
+                                        {{#if $eq type "twitter"}}
+                                            <p class="resource">
+                                                <img src="https://buzzy.buzz/assets/email/icon-twitter.png"
+                                                     class="icon" alt="[twitter]"/>
+                                                {{{content.text}}}
+                                            </p>
+                                        {{/if}}
+                                        {{#if $eq type "giphy"}}
+                                            <p class="resource">
+                                                <img src="{{content}}"
+                                                     class="image" alt="[giphy]"/><br>
+                                                <img style="width: 100px; height: auto; float: right;" src="https://buzzy.buzz/assets/img/giphy_horizontal_lightbg.png" alt="Powered by GIPHY" >
+                                            </p>
+                                        {{/if}}
+                                        {{#if $eq type "file_list"}}
+                                            {{#each files ../_id}}
+                                                <p class="resource">
+                                                    <a href="{{getURL}}">
+                                                        <img src="https://buzzy.buzz/assets/email/icon-file.png"
+                                                             class="icon" alt="[file]"/>
+                                                        <span class="name">{{this.name}}</span>
+                                                        <span class="meta">{{formatBytes this.size}}</span>
+                                                    </a>
+                                                    <!--<span class="caption">Optional caption could go here...</span>-->
+                                                </p>
+                                            {{/each}}
+                                            {{#each images ../_id}}
+                                                <p class="resource">
+                                                    <img src="{{getURL}}" class="image" alt="[image]"/>
+                                                    <!--<span class="caption">Optional caption could go here...</span>-->
+                                                </p>
+                                            {{/each}}
+                                        {{/if}}
+                                        {{#if $eq type "filepicker_list"}}
+
+                                            {{#each filePickerFiles}}
+                                                {{#if isImageMime this.mimetype}}
+                                                    <p class="resource">
+                                                        <img src="{{ this.url}}" class="image" alt="[image]"/>
+                                                    </p>
+
+                                                {{else}}
+                                                    <p class="resource">
+                                                        <a href="{{ this.url}}">
+                                                            <img src="https://buzzy.buzz/assets/email/icon-file.png"
+                                                                 class="icon" alt="[file]"/>
+                                                            <span class="name">{{this.filename}}</span>
+                                                            <span class="meta">{{formatBytes this.size}}</span>
+                                                        </a>
+                                                    </p>
+                                                {{/if}}
+
+                                            {{/each}}
+
+                                        {{/if}}
+                                    {{/each}}
+                                {{else}}
+                                    {{#if $eq type "googlemap"}}
+                                        <p class="resource">
+                                            <a href="{{locationSearch content.coords}}">
+                                                <img src="https://buzzy.buzz/assets/email/icon-map.png"
+                                                     class="icon" alt="[map]"/>
+                                                <span class="name">{{locationSearch content.coords}}</span>
+                                            </a>
+                                            <!--<span class="caption">Optional caption could go here...</span>-->
+                                        </p>
+
+                                    {{/if}}
+                                    {{#if $eq type "video"}}
+                                        <p class="resource">
+
+                                            <a href="{{commentLink currentComment.topLevelParentID _id userCompletedSetup context}}">
+                                                <img src="https://buzzy.buzz/assets/email/icon-video.png"
+                                                     class="icon" alt="[video]"/>
+                                                <span class="name">Click link to to play video on Buzzy</span>
+                                            </a>
+                                            {{#if content.caption}}
+                                                <span class="caption">{{content.caption}}</span>
+                                            {{/if}}
+                                        </p>
+                                    {{/if}}
+                                    {{#if $eq type "link"}}
+                                        <p class="resource">
+                                            <a href="{{content.originalLink}}">
+                                                <img src="https://buzzy.buzz/assets/email/icon-link.png"
+                                                     class="icon" alt="[link]"/>
+                                                {{#if content.title}}
+                                                    <span class="name">{{content.title}}</span>
+                                                {{else}}
+                                                    <span class="name">{{truncateURL content.originalLink}}</span>
+                                                {{/if}}
+                                                <span class="meta">{{content.site_name}}</span>
+                                            </a>
+                                            {{#if content.caption}}
+                                                <span class="caption">{{content.caption}}</span>
+                                            {{/if}}
+                                        </p>
+                                    {{/if}}
+                                    {{#if $eq type "twitter"}}
+                                        <p class="resource">
+                                            <img src="https://buzzy.buzz/assets/email/icon-twitter.png"
+                                                 class="icon" alt="[twitter]"/>
+                                            {{{content.text}}}
+                                        </p>
+                                    {{/if}}
+                                    {{#if $eq type "file_list"}}
+                                        {{#each files ../_id}}
+                                            <p class="resource">
+                                                <a href="{{getURL}}">
+                                                    <img src="https://buzzy.buzz/assets/email/icon-file.png"
+                                                         class="icon" alt="[file]"/>
+                                                    <span class="name">{{this.name}}</span>
+                                                    <span class="meta">{{formatBytes this.size}}</span>
+                                                </a>
+                                                <!--<span class="caption">Optional caption could go here...</span>-->
+                                            </p>
+                                        {{/each}}
+                                        {{#each images ../_id}}
+                                            <p class="resource">
+                                                <img src="{{getURL}}" class="image" alt="[image]"/>
+                                                <!--<span class="caption">Optional caption could go here...</span>-->
+                                            </p>
+                                        {{/each}}
+                                    {{/if}}
+                                    {{#if $eq type "filepicker_list"}}
+
+                                        {{#each filePickerFiles}}
+                                            {{#if isImageMime this.mimetype}}
+                                                <p class="resource">
+                                                    <img src="{{ this.url}}" class="image" alt="[image]"/>
+                                                </p>
+
+                                            {{else}}
+                                                <p class="resource">
+                                                    <a href="{{ this.url}}">
+                                                        <img src="https://buzzy.buzz/assets/email/icon-file.png"
+                                                             class="icon" alt="[file]"/>
+                                                        <span class="name">{{this.filename}}</span>
+                                                        <span class="meta">{{formatBytes this.size}}</span>
+                                                    </a>
+                                                </p>
+                                            {{/if}}
+
+                                        {{/each}}
+
+                                    {{/if}}
+                                {{/if}}
+                                {{#if $eq type "googlemap"}}
+                                    <p class="resource">
+                                        <a href="{{locationSearch content.coords}}">
+                                            <img src="https://buzzy.buzz/assets/email/icon-map.png"
+                                                 class="icon" alt="[map]"/>
+                                            <span class="name">{{locationSearch content.coords}}</span>
+                                        </a>
+                                        <!--<span class="caption">Optional caption could go here...</span>-->
+                                    </p>
+
+                                {{/if}}
+                                {{#if $eq type "video"}}
+                                    <p class="resource">
+
+                                        <a href="{{commentLink currentComment.topLevelParentID _id userCompletedSetup context}}">
+                                            <img src="https://buzzy.buzz/assets/email/icon-video.png"
+                                                 class="icon" alt="[video]"/>
+                                            <span class="name">Click link to to play video on Buzzy</span>
+                                        </a>
+                                        {{#if content.caption}}
+                                            <span class="caption">{{content.caption}}</span>
+                                        {{/if}}
+                                    </p>
+                                {{/if}}
+                                {{#if $eq type "link"}}
+                                    <p class="resource">
+                                        <a href="{{content.originalLink}}">
+                                            <img src="https://buzzy.buzz/assets/email/icon-link.png"
+                                                 class="icon" alt="[link]"/>
+                                            {{#if content.title}}
+                                                <span class="name">{{content.title}}</span>
+                                            {{else}}
+                                                <span class="name">{{truncateURL content.originalLink}}</span>
+                                            {{/if}}
+                                            <span class="meta">{{content.site_name}}</span>
+                                        </a>
+                                        {{#if content.caption}}
+                                            <span class="caption">{{content.caption}}</span>
+                                        {{/if}}
+                                    </p>
+                                {{/if}}
+                                {{#if $eq type "twitter"}}
+                                    <p class="resource">
+                                        <img src="https://buzzy.buzz/assets/email/icon-twitter.png"
+                                             class="icon" alt="[twitter]"/>
+                                        {{{content.text}}}
+                                    </p>
+                                {{/if}}
+                                {{#if $eq type "file_list"}}
+                                    {{#each files ../_id}}
+                                        <p class="resource">
+                                            <a href="{{getURL}}">
+                                                <img src="https://buzzy.buzz/assets/email/icon-file.png"
+                                                     class="icon" alt="[file]"/>
+                                                <span class="name">{{this.name}}</span>
+                                                <span class="meta">{{formatBytes this.size}}</span>
+                                            </a>
+                                            <!--<span class="caption">Optional caption could go here...</span>-->
+                                        </p>
+                                    {{/each}}
+                                    {{#each images ../_id}}
+                                        <p class="resource">
+                                            <img src="{{getURL}}" class="image" alt="[image]"/>
+                                            <!--<span class="caption">Optional caption could go here...</span>-->
+                                        </p>
+                                    {{/each}}
+                                {{/if}}
+                                {{#if $eq type "filepicker_list"}}
+
+                                    {{#each filePickerFiles}}
+                                        {{#if isImageMime this.mimetype}}
+                                            <p class="resource">
+                                                <img src="{{ this.url}}" class="image" alt="[image]"/>
+                                            </p>
+
+                                        {{else}}
+                                            <p class="resource">
+                                                <a href="{{ this.url}}">
+                                                    <img src="https://buzzy.buzz/assets/email/icon-file.png"
+                                                         class="icon" alt="[file]"/>
+                                                    <span class="name">{{this.filename}}</span>
+                                                    <span class="meta">{{formatBytes this.size}}</span>
+                                                </a>
+                                            </p>
+                                        {{/if}}
+
+                                    {{/each}}
+
+                                {{/if}}
+                            {{/with}}
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="comment comment-reply">
+                            <strong>Reply to this email directly</strong> or <a href="{{commentLink this.comment.topLevelParentID this.comment.topLevelParentID}}"><strong>View it on Buzzy</strong></a><br />
+                            <small>If replying via email, you won't be able to add attachments - we're working on it.</small>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <!-- Email footer -->
+        <tr>
+            <td class="content-footer">
+	            {{!-- #990: Add big cta below normal cta for new users --}}
+	            {{#if completedSetup }}
+	            {{else}}
+	            	<div>
+						<a href="{{commentLink this.comment.topLevelParentID this.comment.topLevelParentID}}?utm_source=buzzy_email&utm_content=cta-invite-red-followthisonbuzzy-notif" style="background-color:#d9534f;border:1px solid #d43f3a;border-radius:6px;color:#ffffff;display:inline-block;font-family:Lato,Tahoma,Helvetica,Arial,sans-serif;font-size:20px;font-weight:bold;line-height:48px;text-align:center;text-decoration:none;min-width:216px;width:100%;-webkit-text-size-adjust:none;">Follow this on Buzzy</a>
+					</div>
+					<br />
+	            {{/if}}
+                <strong>Don’t want to receive these emails?</strong><br />
+                <a href="{{unfollowURL this.comment.topLevelParentID}}">Stop receiving notifications from this Buzz</a>
+            </td>
+        </tr>
+        <tr>
+            <td class="content-footer promo">
+                {{!-- #990: Hide normal promos for existing users and do app links instead --}}
+                {{#if completedSetup }}
+                    {{!-- {{{getPromoCommentExistingUser}}} --}}
+                    <strong>Take Buzzy with you on the go! Get the Buzzy App.</strong><br /><br />
+					<a href="itunes.apple.com/app/apple-store/id954176500?pt=105534889&ct=buzzyemailcomment&mt=8"><img src="https://buzzy.buzz/assets/email/btn-app-ios.gif" alt="Get the iOS app" width="130" height="42" /></a>
+					<a href="play.google.com/store/apps/details?id=buzz.buzzy.my1&hl=en&utm_source=buzzy_email&utm_content=buzzyemailcomment"><img src="https://buzzy.buzz/assets/email/btn-app-android.gif" alt="Get the Android app" width="130" height="42" /></a>                    
+                {{else}}
+                    {{{getPromoCommentNewUser}}}
+                {{/if}}
+                <img src="{{viewCommentURL}}" height="1" width="1" />
+            </td>
+        </tr>
+
+    </table>
+{{/let}}
+

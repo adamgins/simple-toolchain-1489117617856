@@ -1,0 +1,12 @@
+---
+declared-services: 
+      mongodbbuzzy01: 
+        label: compose-for-mongodb
+        plan: Standard
+applications:
+- name:    buzzyAG
+  host:    buzzyAG
+  domain: au-syd.mybluemix.net
+  services:
+    - mongodbbuzzy01
+    

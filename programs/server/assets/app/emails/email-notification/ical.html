@@ -1,0 +1,30 @@
+<table class="content">
+							
+	<!-- Email title -->
+	<tr>
+		<td class="content-header">
+			<h1 class="title standalone">Your Calendar Entry</h1>
+		</td>
+	</tr>
+	
+	<!-- Email body -->
+	<tr>
+		<td class="content-body">
+
+            {{#if value.title}}
+                <h3>{{value.title}}</h3>
+            {{/if}}
+            {{#if value.location}}
+            	<p>
+	            	<a href="{{value.location.url}}">{{value.location.formatted_address}}</a>
+            	</p>	
+			{{/if}}
+			<p>Please open the calendar attachment in this email to add this event to your calendar.</p>
+			
+			<div class="divider"></div>
+			<p>Want to add it to your calendar without having to send an email? <a href="http://www.buzzy.buzz/get-mobile-with-buzzy.html">Get the Buzzy app</a></p>
+									
+		</td>
+	</tr>
+	
+</table>

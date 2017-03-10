@@ -1,0 +1,47 @@
+<table class="content">
+	
+	<!-- Email title -->
+	<tr>
+		<td class="content-header">
+			<div class="avatar-container"><img src="{{showUserProfileImage fromUserID}}" alt="Avatar" width="36" height="36" class="avatar" /></div>
+			<span class="user">[userName] or [email]</span>
+			<span class="action">has requested access to your Buzz:</span>
+			<h1 class="title"><a href="{{mainBuzzLink this resource._id mainLink}}">{{resource.title}}</a></h1>
+		</td>
+	</tr>
+
+	<!-- Email body -->
+	<tr>
+		<td class="content-body">
+			
+			<!-- IF MESSAGE ADDED -->
+			<p>If message entered in request form, displays here. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>									
+			<div class="divider"></div>
+			<!-- /IF -->
+			<small>To approve access, simply click the button below - (username@email.com) will receive an invitation to the Buzz.</small>
+			
+		</td>
+	</tr>
+
+	<!-- Email CTA -->
+	<tr>
+		<td class="content-calltoaction">
+
+			<div>
+                <a href="#" style="background-color:{{bg}};border:1px solid {{border}};border-radius:6px;color:#ffffff;display:inline-block;font-family:Lato,Tahoma,sans-serif;font-size:20px;font-weight:bold;line-height:48px;text-align:center;text-decoration:none;min-width:216px;width:100%;-webkit-text-size-adjust:none;">
+                	Approve access request
+                </a>
+			</div>
+
+		</td>
+	</tr>
+
+	<!-- Email footer -->
+	<tr>
+		<td class="content-footer promo">
+            {{{getPromoInviteExistingUser}}}
+		</td>
+	</tr>
+	
+</table>
+<img src="{{viewURLResource resource._id toUserID}}" height="1" width="1" />

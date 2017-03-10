@@ -1,0 +1,13 @@
+{
+
+  "microsoft": {
+    "clientId": "0000000040150987",
+    "secret": "9jUXhUJd753cRTfZWu-XTmuvmisXcK8Y"
+  },
+  "public": {
+    "ga": {
+      "id": "UA-60253362-1"
+    }
+  }
+
+}

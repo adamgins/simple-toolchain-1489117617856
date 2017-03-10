@@ -1,0 +1,727 @@
+{
+  "format": "javascript-image-pre1",
+  "arch": "os",
+  "load": [
+    {
+      "path": "packages/underscore.js"
+    },
+    {
+      "node_modules": "npm/node_modules/meteor/meteor/node_modules",
+      "path": "packages/meteor.js"
+    },
+    {
+      "node_modules": "npm/node_modules/meteor/modules-runtime/node_modules",
+      "path": "packages/modules-runtime.js"
+    },
+    {
+      "node_modules": "npm/node_modules/meteor/modules/node_modules",
+      "path": "packages/modules.js"
+    },
+    {
+      "node_modules": "npm/node_modules/meteor/es5-shim/node_modules",
+      "path": "packages/es5-shim.js"
+    },
+    {
+      "node_modules": "npm/node_modules/meteor/promise/node_modules",
+      "path": "packages/promise.js"
+    },
+    {
+      "node_modules": "npm/node_modules/meteor/ecmascript-runtime/node_modules",
+      "path": "packages/ecmascript-runtime.js"
+    },
+    {
+      "node_modules": "npm/node_modules/meteor/babel-compiler/node_modules",
+      "path": "packages/babel-compiler.js"
+    },
+    {
+      "sourceMap": "packages/ecmascript.js.map",
+      "path": "packages/ecmascript.js"
+    },
+    {
+      "node_modules": "npm/node_modules/meteor/babel-runtime/node_modules",
+      "path": "packages/babel-runtime.js"
+    },
+    {
+      "sourceMap": "packages/random.js.map",
+      "path": "packages/random.js"
+    },
+    {
+      "path": "packages/rate-limit.js"
+    },
+    {
+      "path": "packages/ddp-rate-limiter.js"
+    },
+    {
+      "path": "packages/base64.js"
+    },
+    {
+      "path": "packages/ejson.js"
+    },
+    {
+      "path": "packages/check.js"
+    },
+    {
+      "path": "packages/callback-hook.js"
+    },
+    {
+      "path": "packages/tracker.js"
+    },
+    {
+      "path": "packages/retry.js"
+    },
+    {
+      "path": "packages/id-map.js"
+    },
+    {
+      "path": "packages/ddp-common.js"
+    },
+    {
+      "path": "packages/diff-sequence.js"
+    },
+    {
+      "path": "packages/mongo-id.js"
+    },
+    {
+      "node_modules": "npm/node_modules/meteor/ddp-client/node_modules",
+      "path": "packages/ddp-client.js"
+    },
+    {
+      "node_modules": "npm/node_modules/meteor/logging/node_modules",
+      "path": "packages/logging.js"
+    },
+    {
+      "path": "packages/routepolicy.js"
+    },
+    {
+      "path": "packages/deps.js"
+    },
+    {
+      "path": "packages/htmljs.js"
+    },
+    {
+      "path": "packages/html-tools.js"
+    },
+    {
+      "path": "packages/blaze-tools.js"
+    },
+    {
+      "path": "packages/spacebars-compiler.js"
+    },
+    {
+      "path": "packages/observe-sequence.js"
+    },
+    {
+      "path": "packages/jquery.js"
+    },
+    {
+      "path": "packages/reactive-var.js"
+    },
+    {
+      "path": "packages/blaze.js"
+    },
+    {
+      "path": "packages/spacebars.js"
+    },
+    {
+      "path": "packages/ui.js"
+    },
+    {
+      "path": "packages/boilerplate-generator.js",
+      "assets": {
+        "boilerplate_web.browser.html": "assets/packages/boilerplate-generator/boilerplate_web.browser.html",
+        "boilerplate_web.cordova.html": "assets/packages/boilerplate-generator/boilerplate_web.cordova.html"
+      }
+    },
+    {
+      "sourceMap": "packages/webapp-hashing.js.map",
+      "path": "packages/webapp-hashing.js"
+    },
+    {
+      "node_modules": "npm/node_modules/meteor/webapp/node_modules",
+      "sourceMap": "packages/webapp.js.map",
+      "path": "packages/webapp.js"
+    },
+    {
+      "path": "packages/ordered-dict.js"
+    },
+    {
+      "path": "packages/geojson-utils.js"
+    },
+    {
+      "path": "packages/minimongo.js"
+    },
+    {
+      "node_modules": "npm/node_modules/meteor/ddp-server/node_modules",
+      "sourceMap": "packages/ddp-server.js.map",
+      "path": "packages/ddp-server.js"
+    },
+    {
+      "path": "packages/ddp.js"
+    },
+    {
+      "node_modules": "npm/node_modules/meteor/npm-mongo/node_modules",
+      "path": "packages/npm-mongo.js"
+    },
+    {
+      "sourceMap": "packages/allow-deny.js.map",
+      "path": "packages/allow-deny.js"
+    },
+    {
+      "path": "packages/binary-heap.js"
+    },
+    {
+      "node_modules": "npm/node_modules/meteor/mongo/node_modules",
+      "sourceMap": "packages/mongo.js.map",
+      "path": "packages/mongo.js"
+    },
+    {
+      "sourceMap": "packages/accounts-base.js.map",
+      "path": "packages/accounts-base.js"
+    },
+    {
+      "path": "packages/service-configuration.js"
+    },
+    {
+      "path": "packages/localstorage.js"
+    },
+    {
+      "path": "packages/url.js"
+    },
+    {
+      "path": "packages/oauth.js",
+      "assets": {
+        "end_of_popup_response.html": "assets/packages/oauth/end_of_popup_response.html",
+        "end_of_redirect_response.html": "assets/packages/oauth/end_of_redirect_response.html"
+      }
+    },
+    {
+      "path": "packages/accounts-oauth.js"
+    },
+    {
+      "path": "packages/oauth2.js"
+    },
+    {
+      "node_modules": "npm/node_modules/meteor/http/node_modules",
+      "sourceMap": "packages/http.js.map",
+      "path": "packages/http.js"
+    },
+    {
+      "path": "packages/google.js"
+    },
+    {
+      "path": "packages/accounts-google.js"
+    },
+    {
+      "node_modules": "npm/node_modules/meteor/sacha_spin/node_modules",
+      "path": "packages/sacha_spin.js"
+    },
+    {
+      "node_modules": "npm/node_modules/meteor/manuelschoebel_cheerio/node_modules",
+      "path": "packages/manuelschoebel_cheerio.js"
+    },
+    {
+      "path": "packages/oauth1.js"
+    },
+    {
+      "path": "packages/twitter.js"
+    },
+    {
+      "path": "packages/accounts-twitter.js"
+    },
+    {
+      "node_modules": "npm/node_modules/meteor/mrt_twit/node_modules",
+      "path": "packages/mrt_twit.js"
+    },
+    {
+      "node_modules": "npm/node_modules/meteor/mrt_twilio-meteor/node_modules",
+      "path": "packages/mrt_twilio-meteor.js"
+    },
+    {
+      "path": "packages/alisalaah_hogan.js"
+    },
+    {
+      "path": "packages/facebook.js"
+    },
+    {
+      "path": "packages/accounts-facebook.js"
+    },
+    {
+      "node_modules": "npm/node_modules/meteor/npm-bcrypt/node_modules",
+      "path": "packages/npm-bcrypt.js"
+    },
+    {
+      "path": "packages/sha.js"
+    },
+    {
+      "path": "packages/srp.js"
+    },
+    {
+      "node_modules": "npm/node_modules/meteor/email/node_modules",
+      "path": "packages/email.js"
+    },
+    {
+      "sourceMap": "packages/accounts-password.js.map",
+      "path": "packages/accounts-password.js"
+    },
+    {
+      "path": "packages/meteorhacks_meteorx.js"
+    },
+    {
+      "path": "packages/meteorhacks_unblock.js"
+    },
+    {
+      "path": "packages/raix_ui-dropped-event.js"
+    },
+    {
+      "path": "packages/fastclick.js"
+    },
+    {
+      "path": "packages/mquandalle_ismobile.js"
+    },
+    {
+      "path": "packages/mongo-livedata.js"
+    },
+    {
+      "path": "packages/meteorhacks_collection-utils.js"
+    },
+    {
+      "path": "packages/meteorhacks_aggregate.js"
+    },
+    {
+      "path": "packages/reywood_publish-composite.js"
+    },
+    {
+      "path": "packages/bozhao_accounts-instagram.js"
+    },
+    {
+      "path": "packages/raix_handlebar-helpers.js"
+    },
+    {
+      "path": "packages/maxharris9_connection-banner.js"
+    },
+    {
+      "path": "packages/adamgins_microsoft-oauth.js"
+    },
+    {
+      "path": "packages/johnantoni_meteor-appear.js"
+    },
+    {
+      "path": "packages/copleykj_jquery-autosize.js"
+    },
+    {
+      "node_modules": "npm/node_modules/meteor/djedi_sanitize-html/node_modules",
+      "path": "packages/djedi_sanitize-html.js"
+    },
+    {
+      "path": "packages/linto_jquery-ui.js"
+    },
+    {
+      "path": "packages/livedata.js"
+    },
+    {
+      "path": "packages/mrt_q.js"
+    },
+    {
+      "path": "packages/percolate_google-api.js"
+    },
+    {
+      "path": "packages/meteorhacks_subs-manager.js"
+    },
+    {
+      "path": "packages/templating-compiler.js"
+    },
+    {
+      "path": "packages/templating-runtime.js"
+    },
+    {
+      "path": "packages/templating.js"
+    },
+    {
+      "path": "packages/dburles_google-maps.js"
+    },
+    {
+      "path": "packages/browser-policy-common.js"
+    },
+    {
+      "path": "packages/browser-policy-content.js"
+    },
+    {
+      "path": "packages/browser-policy-framing.js"
+    },
+    {
+      "path": "packages/browser-policy.js"
+    },
+    {
+      "node_modules": "npm/node_modules/meteor/fortawesome_fontawesome/node_modules",
+      "path": "packages/fortawesome_fontawesome.js"
+    },
+    {
+      "path": "packages/mdg_geolocation.js"
+    },
+    {
+      "sourceMap": "packages/mizzao_timesync.js.map",
+      "path": "packages/mizzao_timesync.js"
+    },
+    {
+      "path": "packages/meteor-base.js"
+    },
+    {
+      "path": "packages/mobile-experience.js"
+    },
+    {
+      "path": "packages/blaze-html-templates.js"
+    },
+    {
+      "path": "packages/session.js"
+    },
+    {
+      "path": "packages/reload.js"
+    },
+    {
+      "path": "packages/less.js"
+    },
+    {
+      "path": "packages/lukemadera_social-share.js"
+    },
+    {
+      "path": "packages/crosswalk.js"
+    },
+    {
+      "path": "packages/harrison_papa-parse.js"
+    },
+    {
+      "node_modules": "npm/node_modules/meteor/meteorhacks_inject-initial/node_modules",
+      "path": "packages/meteorhacks_inject-initial.js"
+    },
+    {
+      "path": "packages/natestrauser_filepicker-plus.js"
+    },
+    {
+      "path": "packages/jparker_crypto-core.js"
+    },
+    {
+      "path": "packages/jparker_crypto-sha256.js"
+    },
+    {
+      "path": "packages/jparker_crypto-hmac.js"
+    },
+    {
+      "path": "packages/momentjs_moment.js"
+    },
+    {
+      "path": "packages/peerlibrary_blocking.js"
+    },
+    {
+      "node_modules": "npm/node_modules/meteor/peerlibrary_aws-sdk/node_modules",
+      "path": "packages/peerlibrary_aws-sdk.js"
+    },
+    {
+      "node_modules": "npm/node_modules/meteor/froatsnook_request/node_modules",
+      "path": "packages/froatsnook_request.js"
+    },
+    {
+      "path": "packages/force-ssl.js"
+    },
+    {
+      "sourceMap": "packages/buzzy-buzz_common-globals.js.map",
+      "path": "packages/buzzy-buzz_common-globals.js"
+    },
+    {
+      "path": "packages/meteorhacks_npm.js"
+    },
+    {
+      "path": "packages/iron_core.js"
+    },
+    {
+      "path": "packages/iron_dynamic-template.js"
+    },
+    {
+      "path": "packages/iron_layout.js"
+    },
+    {
+      "path": "packages/iron_url.js"
+    },
+    {
+      "path": "packages/iron_middleware-stack.js"
+    },
+    {
+      "path": "packages/iron_location.js"
+    },
+    {
+      "sourceMap": "packages/reactive-dict.js.map",
+      "path": "packages/reactive-dict.js"
+    },
+    {
+      "path": "packages/iron_controller.js"
+    },
+    {
+      "node_modules": "npm/node_modules/meteor/iron_router/node_modules",
+      "path": "packages/iron_router.js"
+    },
+    {
+      "node_modules": "npm/node_modules/meteor/sacha_juice/node_modules",
+      "path": "packages/sacha_juice.js"
+    },
+    {
+      "path": "packages/meteorhacks_ssr.js"
+    },
+    {
+      "node_modules": "npm/node_modules/meteor/meteorhacks_picker/node_modules",
+      "path": "packages/meteorhacks_picker.js"
+    },
+    {
+      "node_modules": "npm/node_modules/meteor/lookback_emails/node_modules",
+      "sourceMap": "packages/lookback_emails.js.map",
+      "path": "packages/lookback_emails.js"
+    },
+    {
+      "path": "packages/raix_eventemitter.js"
+    },
+    {
+      "path": "packages/raix_eventstate.js"
+    },
+    {
+      "node_modules": "npm/node_modules/meteor/raix_push/node_modules",
+      "sourceMap": "packages/raix_push.js.map",
+      "path": "packages/raix_push.js"
+    },
+    {
+      "path": "packages/hot-code-push.js"
+    },
+    {
+      "path": "packages/meteorhacks_async.js"
+    },
+    {
+      "path": "packages/autoupdate.js"
+    },
+    {
+      "node_modules": "npm/node_modules/meteor/buzzy-buzz_resources-core/node_modules",
+      "sourceMap": "packages/buzzy-buzz_resources-core.js.map",
+      "path": "packages/buzzy-buzz_resources-core.js"
+    },
+    {
+      "path": "packages/pfafman_filesaver.js"
+    },
+    {
+      "path": "packages/simple_reactive-method.js"
+    },
+    {
+      "path": "packages/jeremy_selectize.js"
+    },
+    {
+      "path": "packages/jparker_crypto-md5.js"
+    },
+    {
+      "path": "packages/jparker_gravatar.js"
+    },
+    {
+      "path": "packages/buzzy-buzz_avatar.js",
+      "assets": {
+        "default.png": "assets/packages/buzzy-buzz_avatar/default.png"
+      }
+    },
+    {
+      "path": "packages/peppelg_bootstrap-3-modal.js"
+    },
+    {
+      "path": "packages/richsilv_owl-carousel.js"
+    },
+    {
+      "sourceMap": "packages/dispatch_deep-link.js.map",
+      "path": "packages/dispatch_deep-link.js"
+    },
+    {
+      "path": "packages/standard-minifier-css.js"
+    },
+    {
+      "path": "packages/standard-minifier-js.js"
+    },
+    {
+      "path": "packages/huttonr_bootstrap3-assets.js",
+      "assets": {
+        "assets/defaults/bootstrap-settings.default.json": "assets/packages/huttonr_bootstrap3-assets/assets/defaults/bootstrap-settings.default.json",
+        "assets/bootstrap/js/affix.js": "assets/packages/huttonr_bootstrap3-assets/assets/bootstrap/js/affix.js",
+        "assets/bootstrap/js/alert.js": "assets/packages/huttonr_bootstrap3-assets/assets/bootstrap/js/alert.js",
+        "assets/bootstrap/js/button.js": "assets/packages/huttonr_bootstrap3-assets/assets/bootstrap/js/button.js",
+        "assets/bootstrap/js/carousel.js": "assets/packages/huttonr_bootstrap3-assets/assets/bootstrap/js/carousel.js",
+        "assets/bootstrap/js/collapse.js": "assets/packages/huttonr_bootstrap3-assets/assets/bootstrap/js/collapse.js",
+        "assets/bootstrap/js/dropdown.js": "assets/packages/huttonr_bootstrap3-assets/assets/bootstrap/js/dropdown.js",
+        "assets/bootstrap/js/modal.js": "assets/packages/huttonr_bootstrap3-assets/assets/bootstrap/js/modal.js",
+        "assets/bootstrap/js/popover.js": "assets/packages/huttonr_bootstrap3-assets/assets/bootstrap/js/popover.js",
+        "assets/bootstrap/js/scrollspy.js": "assets/packages/huttonr_bootstrap3-assets/assets/bootstrap/js/scrollspy.js",
+        "assets/bootstrap/js/tab.js": "assets/packages/huttonr_bootstrap3-assets/assets/bootstrap/js/tab.js",
+        "assets/bootstrap/js/tooltip.js": "assets/packages/huttonr_bootstrap3-assets/assets/bootstrap/js/tooltip.js",
+        "assets/bootstrap/js/transition.js": "assets/packages/huttonr_bootstrap3-assets/assets/bootstrap/js/transition.js",
+        "assets/bootstrap/less/alerts.less": "assets/packages/huttonr_bootstrap3-assets/assets/bootstrap/less/alerts.less",
+        "assets/bootstrap/less/badges.less": "assets/packages/huttonr_bootstrap3-assets/assets/bootstrap/less/badges.less",
+        "assets/bootstrap/less/breadcrumbs.less": "assets/packages/huttonr_bootstrap3-assets/assets/bootstrap/less/breadcrumbs.less",
+        "assets/bootstrap/less/buttons.less": "assets/packages/huttonr_bootstrap3-assets/assets/bootstrap/less/buttons.less",
+        "assets/bootstrap/less/close.less": "assets/packages/huttonr_bootstrap3-assets/assets/bootstrap/less/close.less",
+        "assets/bootstrap/less/code.less": "assets/packages/huttonr_bootstrap3-assets/assets/bootstrap/less/code.less",
+        "assets/bootstrap/less/component-animations.less": "assets/packages/huttonr_bootstrap3-assets/assets/bootstrap/less/component-animations.less",
+        "assets/bootstrap/less/dropdowns.less": "assets/packages/huttonr_bootstrap3-assets/assets/bootstrap/less/dropdowns.less",
+        "assets/bootstrap/less/grid.less": "assets/packages/huttonr_bootstrap3-assets/assets/bootstrap/less/grid.less",
+        "assets/bootstrap/less/labels.less": "assets/packages/huttonr_bootstrap3-assets/assets/bootstrap/less/labels.less",
+        "assets/bootstrap/less/list-group.less": "assets/packages/huttonr_bootstrap3-assets/assets/bootstrap/less/list-group.less",
+        "assets/bootstrap/less/media.less": "assets/packages/huttonr_bootstrap3-assets/assets/bootstrap/less/media.less",
+        "assets/bootstrap/less/mixins.less": "assets/packages/huttonr_bootstrap3-assets/assets/bootstrap/less/mixins.less",
+        "assets/bootstrap/less/mixins/alerts.less": "assets/packages/huttonr_bootstrap3-assets/assets/bootstrap/less/mixins/alerts.less",
+        "assets/bootstrap/less/mixins/background-variant.less": "assets/packages/huttonr_bootstrap3-assets/assets/bootstrap/less/mixins/background-variant.less",
+        "assets/bootstrap/less/mixins/border-radius.less": "assets/packages/huttonr_bootstrap3-assets/assets/bootstrap/less/mixins/border-radius.less",
+        "assets/bootstrap/less/mixins/center-block.less": "assets/packages/huttonr_bootstrap3-assets/assets/bootstrap/less/mixins/center-block.less",
+        "assets/bootstrap/less/mixins/clearfix.less": "assets/packages/huttonr_bootstrap3-assets/assets/bootstrap/less/mixins/clearfix.less",
+        "assets/bootstrap/less/mixins/forms.less": "assets/packages/huttonr_bootstrap3-assets/assets/bootstrap/less/mixins/forms.less",
+        "assets/bootstrap/less/mixins/gradients.less": "assets/packages/huttonr_bootstrap3-assets/assets/bootstrap/less/mixins/gradients.less",
+        "assets/bootstrap/less/mixins/grid-framework.less": "assets/packages/huttonr_bootstrap3-assets/assets/bootstrap/less/mixins/grid-framework.less",
+        "assets/bootstrap/less/mixins/image.less": "assets/packages/huttonr_bootstrap3-assets/assets/bootstrap/less/mixins/image.less",
+        "assets/bootstrap/less/mixins/labels.less": "assets/packages/huttonr_bootstrap3-assets/assets/bootstrap/less/mixins/labels.less",
+        "assets/bootstrap/less/mixins/list-group.less": "assets/packages/huttonr_bootstrap3-assets/assets/bootstrap/less/mixins/list-group.less",
+        "assets/bootstrap/less/mixins/nav-divider.less": "assets/packages/huttonr_bootstrap3-assets/assets/bootstrap/less/mixins/nav-divider.less",
+        "assets/bootstrap/less/mixins/nav-vertical-align.less": "assets/packages/huttonr_bootstrap3-assets/assets/bootstrap/less/mixins/nav-vertical-align.less",
+        "assets/bootstrap/less/mixins/opacity.less": "assets/packages/huttonr_bootstrap3-assets/assets/bootstrap/less/mixins/opacity.less",
+        "assets/bootstrap/less/mixins/pagination.less": "assets/packages/huttonr_bootstrap3-assets/assets/bootstrap/less/mixins/pagination.less",
+        "assets/bootstrap/less/mixins/panels.less": "assets/packages/huttonr_bootstrap3-assets/assets/bootstrap/less/mixins/panels.less",
+        "assets/bootstrap/less/mixins/progress-bar.less": "assets/packages/huttonr_bootstrap3-assets/assets/bootstrap/less/mixins/progress-bar.less",
+        "assets/bootstrap/less/mixins/reset-filter.less": "assets/packages/huttonr_bootstrap3-assets/assets/bootstrap/less/mixins/reset-filter.less",
+        "assets/bootstrap/less/mixins/reset-text.less": "assets/packages/huttonr_bootstrap3-assets/assets/bootstrap/less/mixins/reset-text.less",
+        "assets/bootstrap/less/mixins/resize.less": "assets/packages/huttonr_bootstrap3-assets/assets/bootstrap/less/mixins/resize.less",
+        "assets/bootstrap/less/mixins/responsive-visibility.less": "assets/packages/huttonr_bootstrap3-assets/assets/bootstrap/less/mixins/responsive-visibility.less",
+        "assets/bootstrap/less/mixins/size.less": "assets/packages/huttonr_bootstrap3-assets/assets/bootstrap/less/mixins/size.less",
+        "assets/bootstrap/less/mixins/tab-focus.less": "assets/packages/huttonr_bootstrap3-assets/assets/bootstrap/less/mixins/tab-focus.less",
+        "assets/bootstrap/less/mixins/table-row.less": "assets/packages/huttonr_bootstrap3-assets/assets/bootstrap/less/mixins/table-row.less",
+        "assets/bootstrap/less/mixins/text-emphasis.less": "assets/packages/huttonr_bootstrap3-assets/assets/bootstrap/less/mixins/text-emphasis.less",
+        "assets/bootstrap/less/mixins/text-overflow.less": "assets/packages/huttonr_bootstrap3-assets/assets/bootstrap/less/mixins/text-overflow.less",
+        "assets/bootstrap/less/mixins/buttons.less": "assets/packages/huttonr_bootstrap3-assets/assets/bootstrap/less/mixins/buttons.less",
+        "assets/bootstrap/less/mixins/grid.less": "assets/packages/huttonr_bootstrap3-assets/assets/bootstrap/less/mixins/grid.less",
+        "assets/bootstrap/less/mixins/hide-text.less": "assets/packages/huttonr_bootstrap3-assets/assets/bootstrap/less/mixins/hide-text.less",
+        "assets/bootstrap/less/mixins/vendor-prefixes.less": "assets/packages/huttonr_bootstrap3-assets/assets/bootstrap/less/mixins/vendor-prefixes.less",
+        "assets/bootstrap/less/navbar.less": "assets/packages/huttonr_bootstrap3-assets/assets/bootstrap/less/navbar.less",
+        "assets/bootstrap/less/navs.less": "assets/packages/huttonr_bootstrap3-assets/assets/bootstrap/less/navs.less",
+        "assets/bootstrap/less/normalize.less": "assets/packages/huttonr_bootstrap3-assets/assets/bootstrap/less/normalize.less",
+        "assets/bootstrap/less/pager.less": "assets/packages/huttonr_bootstrap3-assets/assets/bootstrap/less/pager.less",
+        "assets/bootstrap/less/panels.less": "assets/packages/huttonr_bootstrap3-assets/assets/bootstrap/less/panels.less",
+        "assets/bootstrap/less/popovers.less": "assets/packages/huttonr_bootstrap3-assets/assets/bootstrap/less/popovers.less",
+        "assets/bootstrap/less/print.less": "assets/packages/huttonr_bootstrap3-assets/assets/bootstrap/less/print.less",
+        "assets/bootstrap/less/progress-bars.less": "assets/packages/huttonr_bootstrap3-assets/assets/bootstrap/less/progress-bars.less",
+        "assets/bootstrap/less/responsive-embed.less": "assets/packages/huttonr_bootstrap3-assets/assets/bootstrap/less/responsive-embed.less",
+        "assets/bootstrap/less/responsive-utilities.less": "assets/packages/huttonr_bootstrap3-assets/assets/bootstrap/less/responsive-utilities.less",
+        "assets/bootstrap/less/scaffolding.less": "assets/packages/huttonr_bootstrap3-assets/assets/bootstrap/less/scaffolding.less",
+        "assets/bootstrap/less/tables.less": "assets/packages/huttonr_bootstrap3-assets/assets/bootstrap/less/tables.less",
+        "assets/bootstrap/less/thumbnails.less": "assets/packages/huttonr_bootstrap3-assets/assets/bootstrap/less/thumbnails.less",
+        "assets/bootstrap/less/tooltip.less": "assets/packages/huttonr_bootstrap3-assets/assets/bootstrap/less/tooltip.less",
+        "assets/bootstrap/less/utilities.less": "assets/packages/huttonr_bootstrap3-assets/assets/bootstrap/less/utilities.less",
+        "assets/bootstrap/less/wells.less": "assets/packages/huttonr_bootstrap3-assets/assets/bootstrap/less/wells.less",
+        "assets/bootstrap/less/bootstrap.less": "assets/packages/huttonr_bootstrap3-assets/assets/bootstrap/less/bootstrap.less",
+        "assets/bootstrap/less/button-groups.less": "assets/packages/huttonr_bootstrap3-assets/assets/bootstrap/less/button-groups.less",
+        "assets/bootstrap/less/carousel.less": "assets/packages/huttonr_bootstrap3-assets/assets/bootstrap/less/carousel.less",
+        "assets/bootstrap/less/forms.less": "assets/packages/huttonr_bootstrap3-assets/assets/bootstrap/less/forms.less",
+        "assets/bootstrap/less/glyphicons.less": "assets/packages/huttonr_bootstrap3-assets/assets/bootstrap/less/glyphicons.less",
+        "assets/bootstrap/less/input-groups.less": "assets/packages/huttonr_bootstrap3-assets/assets/bootstrap/less/input-groups.less",
+        "assets/bootstrap/less/jumbotron.less": "assets/packages/huttonr_bootstrap3-assets/assets/bootstrap/less/jumbotron.less",
+        "assets/bootstrap/less/modals.less": "assets/packages/huttonr_bootstrap3-assets/assets/bootstrap/less/modals.less",
+        "assets/bootstrap/less/pagination.less": "assets/packages/huttonr_bootstrap3-assets/assets/bootstrap/less/pagination.less",
+        "assets/bootstrap/less/theme.less": "assets/packages/huttonr_bootstrap3-assets/assets/bootstrap/less/theme.less",
+        "assets/bootstrap/less/type.less": "assets/packages/huttonr_bootstrap3-assets/assets/bootstrap/less/type.less",
+        "assets/bootstrap/less/variables.less": "assets/packages/huttonr_bootstrap3-assets/assets/bootstrap/less/variables.less"
+      }
+    },
+    {
+      "path": "packages/huttonr_bootstrap3.js"
+    },
+    {
+      "path": "packages/npm-container.js",
+      "assets": {
+        "../../packages.json": "assets/packages.json"
+      }
+    },
+    {
+      "path": "packages/okgrow_router-autoscroll.js"
+    },
+    {
+      "sourceMap": "packages/shell-server.js.map",
+      "path": "packages/shell-server.js"
+    },
+    {
+      "path": "packages/risul_moment-timezone.js"
+    },
+    {
+      "path": "packages/tsega_bootstrap3-datetimepicker.js"
+    },
+    {
+      "node_modules": "npm/node_modules/meteor/okgrow_analytics/node_modules",
+      "sourceMap": "packages/okgrow_analytics.js.map",
+      "path": "packages/okgrow_analytics.js"
+    },
+    {
+      "path": "packages/barbatus_stars-rating.js"
+    },
+    {
+      "node_modules": "npm/node_modules/meteor/cosmos_browserify/node_modules",
+      "path": "packages/cosmos_browserify.js"
+    },
+    {
+      "node_modules": "npm/node_modules/meteor/jamielob_reloader/node_modules",
+      "path": "packages/jamielob_reloader.js"
+    },
+    {
+      "path": "packages/froala_editor-reactive.js"
+    },
+    {
+      "path": "packages/launch-screen.js"
+    },
+    {
+      "node_modules": "npm/node_modules",
+      "path": "packages/global-imports.js"
+    },
+    {
+      "node_modules": "npm/node_modules",
+      "sourceMap": "app/app.js.map",
+      "path": "app/app.js",
+      "assets": {
+        "Dev_PushChatCert.pem": "assets/app/Dev_PushChatCert.pem",
+        "Dev_PushChatKey.pem": "assets/app/Dev_PushChatKey.pem",
+        "Dist_PushChatCert.pem": "assets/app/Dist_PushChatCert.pem",
+        "Dist_PushChatKey.pem": "assets/app/Dist_PushChatKey.pem",
+        "Prod_BuzzyBuzzCert.pem": "assets/app/Prod_BuzzyBuzzCert.pem",
+        "Prod_BuzzyBuzzKey.pem": "assets/app/Prod_BuzzyBuzzKey.pem",
+        "buzzypush_prod_cert.pem": "assets/app/buzzypush_prod_cert.pem",
+        "buzzypush_prod_key.pem": "assets/app/buzzypush_prod_key.pem",
+        "ios_file_upload.xml": "assets/app/ios_file_upload.xml",
+        "phantomDriver.js": "assets/app/phantomDriver.js",
+        "saml/sp.crt": "assets/app/saml/sp.crt",
+        "saml/sp.key": "assets/app/saml/sp.key",
+        "saml/zimmer_cert.crt": "assets/app/saml/zimmer_cert.crt",
+        "settings/buzzy_settings.json": "assets/app/settings/buzzy_settings.json",
+        "settings/nitrous_settings.json": "assets/app/settings/nitrous_settings.json",
+        "emails/email-notification/accessrequest.html": "assets/app/emails/email-notification/accessrequest.html",
+        "emails/email-notification/activate.html": "assets/app/emails/email-notification/activate.html",
+        "emails/email-notification/comment.html": "assets/app/emails/email-notification/comment.html",
+        "emails/email-notification/ical.html": "assets/app/emails/email-notification/ical.html",
+        "emails/email-notification/invite.html": "assets/app/emails/email-notification/invite.html",
+        "emails/email-notification/layout.css": "assets/app/emails/email-notification/layout.css",
+        "emails/email-notification/layout.html": "assets/app/emails/email-notification/layout.html",
+        "emails/email-notification/microapp.html": "assets/app/emails/email-notification/microapp.html",
+        "emails/email-notification/reset.html": "assets/app/emails/email-notification/reset.html",
+        "emails/email-notification/resource.html": "assets/app/emails/email-notification/resource.html",
+        "emails/email-notification/style.css": "assets/app/emails/email-notification/style.css",
+        "emails/email-notification/emailpromos/original_app_promo.html": "assets/app/emails/email-notification/emailpromos/original_app_promo.html",
+        "emails/email-notification/emailpromos/promo_comment_existing_random1.html": "assets/app/emails/email-notification/emailpromos/promo_comment_existing_random1.html",
+        "emails/email-notification/emailpromos/promo_comment_existing_random2.html": "assets/app/emails/email-notification/emailpromos/promo_comment_existing_random2.html",
+        "emails/email-notification/emailpromos/promo_comment_existing_random3.html": "assets/app/emails/email-notification/emailpromos/promo_comment_existing_random3.html",
+        "emails/email-notification/emailpromos/promo_comment_existing_random4.html": "assets/app/emails/email-notification/emailpromos/promo_comment_existing_random4.html",
+        "emails/email-notification/emailpromos/promo_comment_new_random1.html": "assets/app/emails/email-notification/emailpromos/promo_comment_new_random1.html",
+        "emails/email-notification/emailpromos/promo_comment_new_random2.html": "assets/app/emails/email-notification/emailpromos/promo_comment_new_random2.html",
+        "emails/email-notification/emailpromos/promo_comment_new_random3.html": "assets/app/emails/email-notification/emailpromos/promo_comment_new_random3.html",
+        "emails/email-notification/emailpromos/promo_comment_new_random4.html": "assets/app/emails/email-notification/emailpromos/promo_comment_new_random4.html",
+        "emails/email-notification/emailpromos/promo_invite_existing_random1.html": "assets/app/emails/email-notification/emailpromos/promo_invite_existing_random1.html",
+        "emails/email-notification/emailpromos/promo_invite_existing_random2.html": "assets/app/emails/email-notification/emailpromos/promo_invite_existing_random2.html",
+        "emails/email-notification/emailpromos/promo_invite_existing_random3.html": "assets/app/emails/email-notification/emailpromos/promo_invite_existing_random3.html",
+        "emails/email-notification/emailpromos/promo_invite_existing_random4.html": "assets/app/emails/email-notification/emailpromos/promo_invite_existing_random4.html",
+        "emails/email-notification/emailpromos/promo_invite_new_random1.html": "assets/app/emails/email-notification/emailpromos/promo_invite_new_random1.html",
+        "emails/email-notification/emailpromos/promo_invite_new_random2.html": "assets/app/emails/email-notification/emailpromos/promo_invite_new_random2.html",
+        "emails/email-notification/emailpromos/promo_invite_new_random3.html": "assets/app/emails/email-notification/emailpromos/promo_invite_new_random3.html",
+        "emails/email-notification/emailpromos/promo_invite_new_random4.html": "assets/app/emails/email-notification/emailpromos/promo_invite_existing_random4.html"
+      }
+    }
+  ]
+}

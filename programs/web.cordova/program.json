@@ -1,0 +1,1266 @@
+{
+  "format": "web-program-pre1",
+  "manifest": [
+    {
+      "path": "8463cc4380f8b9d8432209c61bc6d0c38008a8e7.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/8463cc4380f8b9d8432209c61bc6d0c38008a8e7.js?meteor_js_resource=true",
+      "size": 8831227,
+      "hash": "8463cc4380f8b9d8432209c61bc6d0c38008a8e7"
+    },
+    {
+      "path": "33f259f182fe45744efb141d4e43046807abcc16.css",
+      "where": "client",
+      "type": "css",
+      "cacheable": true,
+      "url": "/33f259f182fe45744efb141d4e43046807abcc16.css?meteor_css_resource=true",
+      "size": 267243,
+      "hash": "33f259f182fe45744efb141d4e43046807abcc16"
+    },
+    {
+      "path": "2f836b4aa5824f784c77417be1305dbfd28ce0e9.css",
+      "where": "client",
+      "type": "css",
+      "cacheable": true,
+      "url": "/2f836b4aa5824f784c77417be1305dbfd28ce0e9.css?meteor_css_resource=true",
+      "size": 296559,
+      "hash": "2f836b4aa5824f784c77417be1305dbfd28ce0e9"
+    },
+    {
+      "path": "69760fb3c5a006bfc1527035cc832f7c4398035c.css",
+      "where": "client",
+      "type": "css",
+      "cacheable": true,
+      "url": "/69760fb3c5a006bfc1527035cc832f7c4398035c.css?meteor_css_resource=true",
+      "size": 97406,
+      "hash": "69760fb3c5a006bfc1527035cc832f7c4398035c"
+    },
+    {
+      "path": "packages/oauth/end_of_popup_response.js",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/oauth/end_of_popup_response.js",
+      "size": 1137,
+      "hash": "8a36abddc07778ebcf5db6253f08bd2b63d02c63"
+    },
+    {
+      "path": "packages/oauth/end_of_redirect_response.js",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/oauth/end_of_redirect_response.js",
+      "size": 273,
+      "hash": "6a6f05754801932831eca4680f582c87a8da062a"
+    },
+    {
+      "path": "packages/linto_jquery-ui/1.11.2/images/ui-bg_diagonals-thick_18_b81900_40x40.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/linto_jquery-ui/1.11.2/images/ui-bg_diagonals-thick_18_b81900_40x40.png",
+      "size": 457,
+      "hash": "22e99a05416c0dd3463994316bbea90cb13e21ec"
+    },
+    {
+      "path": "packages/linto_jquery-ui/1.11.2/images/ui-bg_diagonals-thick_20_666666_40x40.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/linto_jquery-ui/1.11.2/images/ui-bg_diagonals-thick_20_666666_40x40.png",
+      "size": 351,
+      "hash": "19ef68724469f92351e97fbee03f8dda1a578c9d"
+    },
+    {
+      "path": "packages/linto_jquery-ui/1.11.2/images/ui-bg_flat_10_000000_40x100.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/linto_jquery-ui/1.11.2/images/ui-bg_flat_10_000000_40x100.png",
+      "size": 244,
+      "hash": "6e5bc41a04d03a61032e4cad22c169cf8fc27f3e"
+    },
+    {
+      "path": "packages/linto_jquery-ui/1.11.2/images/ui-bg_glass_65_ffffff_1x400.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/linto_jquery-ui/1.11.2/images/ui-bg_glass_65_ffffff_1x400.png",
+      "size": 246,
+      "hash": "033eafe00131936ef065352c894e0696f2d59500"
+    },
+    {
+      "path": "packages/linto_jquery-ui/1.11.2/images/ui-bg_glass_100_f6f6f6_1x400.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/linto_jquery-ui/1.11.2/images/ui-bg_glass_100_f6f6f6_1x400.png",
+      "size": 301,
+      "hash": "be9640f3946a74f1fa7916d9aa07269ebb484c22"
+    },
+    {
+      "path": "packages/linto_jquery-ui/1.11.2/images/ui-bg_glass_100_fdf5ce_1x400.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/linto_jquery-ui/1.11.2/images/ui-bg_glass_100_fdf5ce_1x400.png",
+      "size": 387,
+      "hash": "ef5eab6a0d1061899b78100895660dd802c2dc38"
+    },
+    {
+      "path": "packages/linto_jquery-ui/1.11.2/images/ui-bg_gloss-wave_35_f6a828_500x100.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/linto_jquery-ui/1.11.2/images/ui-bg_gloss-wave_35_f6a828_500x100.png",
+      "size": 5854,
+      "hash": "bc212ea963567ec5a17cf806462ce1c6839448da"
+    },
+    {
+      "path": "packages/linto_jquery-ui/1.11.2/images/ui-bg_highlight-soft_75_ffe45c_1x100.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/linto_jquery-ui/1.11.2/images/ui-bg_highlight-soft_75_ffe45c_1x100.png",
+      "size": 367,
+      "hash": "b5a8a84f85e8278aaab0ac666cf7eb35db739746"
+    },
+    {
+      "path": "packages/linto_jquery-ui/1.11.2/images/ui-bg_highlight-soft_100_eeeeee_1x100.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/linto_jquery-ui/1.11.2/images/ui-bg_highlight-soft_100_eeeeee_1x100.png",
+      "size": 317,
+      "hash": "c13a6206073d52de922b0c95f3c55d7245b3e648"
+    },
+    {
+      "path": "packages/linto_jquery-ui/1.11.2/images/ui-icons_228ef1_256x240.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/linto_jquery-ui/1.11.2/images/ui-icons_228ef1_256x240.png",
+      "size": 4599,
+      "hash": "6ed79b126f895908ef0fa78ca876553f29076f8b"
+    },
+    {
+      "path": "packages/linto_jquery-ui/1.11.2/images/ui-icons_222222_256x240.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/linto_jquery-ui/1.11.2/images/ui-icons_222222_256x240.png",
+      "size": 7006,
+      "hash": "2cbbdeb39bb966a2b8d1ce2b0a4f08470cf551c9"
+    },
+    {
+      "path": "packages/linto_jquery-ui/1.11.2/images/ui-icons_ef8c08_256x240.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/linto_jquery-ui/1.11.2/images/ui-icons_ef8c08_256x240.png",
+      "size": 4599,
+      "hash": "8ab29fc7d45f873b0cbaa1f68e124595f22589b6"
+    },
+    {
+      "path": "packages/linto_jquery-ui/1.11.2/images/ui-icons_ffd27a_256x240.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/linto_jquery-ui/1.11.2/images/ui-icons_ffd27a_256x240.png",
+      "size": 4599,
+      "hash": "7f1574900e5a7bf369722d1ed7177385e90fff30"
+    },
+    {
+      "path": "packages/linto_jquery-ui/1.11.2/images/ui-icons_ffffff_256x240.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/linto_jquery-ui/1.11.2/images/ui-icons_ffffff_256x240.png",
+      "size": 6468,
+      "hash": "a5d5ce43d0fc24dbbe92ff152945d86563516947"
+    },
+    {
+      "path": "packages/fortawesome_fontawesome/upstream/fonts/fontawesome-webfont.eot",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/fortawesome_fontawesome/upstream/fonts/fontawesome-webfont.eot",
+      "size": 76518,
+      "hash": "607f017baf8ad108d39d0c6f48e2c5ed21f0107e"
+    },
+    {
+      "path": "packages/fortawesome_fontawesome/upstream/fonts/fontawesome-webfont.svg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/fortawesome_fontawesome/upstream/fonts/fontawesome-webfont.svg",
+      "size": 391622,
+      "hash": "0dec7c1cb326f727e9ba46e7f2d621148a6f5483"
+    },
+    {
+      "path": "packages/fortawesome_fontawesome/upstream/fonts/fontawesome-webfont.ttf",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/fortawesome_fontawesome/upstream/fonts/fontawesome-webfont.ttf",
+      "size": 152796,
+      "hash": "215bd7d9b8f62fa937c25eeb79302c2eeae617c2"
+    },
+    {
+      "path": "packages/fortawesome_fontawesome/upstream/fonts/fontawesome-webfont.woff",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/fortawesome_fontawesome/upstream/fonts/fontawesome-webfont.woff",
+      "size": 90412,
+      "hash": "920fe6d1fde2e7dc8f2bcff0adba816e1418d150"
+    },
+    {
+      "path": "packages/fortawesome_fontawesome/upstream/fonts/fontawesome-webfont.woff2",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/fortawesome_fontawesome/upstream/fonts/fontawesome-webfont.woff2",
+      "size": 71896,
+      "hash": "34128b97e6bf4408e6a9ec570f27b22a977b54e2"
+    },
+    {
+      "path": "packages/fortawesome_fontawesome/upstream/fonts/FontAwesome.otf",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/fortawesome_fontawesome/upstream/fonts/FontAwesome.otf",
+      "size": 124988,
+      "hash": "13555b576f8f7f7b0ac24c4a348b675d500ee44f"
+    },
+    {
+      "path": "packages/buzzy-buzz_avatar/default.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/buzzy-buzz_avatar/default.png",
+      "size": 1577,
+      "hash": "b31cb4e9d1f63ef20cdfe5039b10a5691ae2eb66"
+    },
+    {
+      "path": "packages/huttonr_bootstrap3-assets/assets/bootstrap/fonts/glyphicons-halflings-regular.eot",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/huttonr_bootstrap3-assets/assets/bootstrap/fonts/glyphicons-halflings-regular.eot",
+      "size": 20127,
+      "hash": "30407a683746065f032a7a61ff50f24b008cc8b3"
+    },
+    {
+      "path": "packages/huttonr_bootstrap3-assets/assets/bootstrap/fonts/glyphicons-halflings-regular.svg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/huttonr_bootstrap3-assets/assets/bootstrap/fonts/glyphicons-halflings-regular.svg",
+      "size": 108738,
+      "hash": "79a351a269ccbdab7745962bfd40cf86c2b9bc95"
+    },
+    {
+      "path": "packages/huttonr_bootstrap3-assets/assets/bootstrap/fonts/glyphicons-halflings-regular.ttf",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/huttonr_bootstrap3-assets/assets/bootstrap/fonts/glyphicons-halflings-regular.ttf",
+      "size": 45404,
+      "hash": "3a900bcba1505bbef235f1b497513a1bd894f434"
+    },
+    {
+      "path": "packages/huttonr_bootstrap3-assets/assets/bootstrap/fonts/glyphicons-halflings-regular.woff",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/huttonr_bootstrap3-assets/assets/bootstrap/fonts/glyphicons-halflings-regular.woff",
+      "size": 23424,
+      "hash": "434169edd7cbbb36bb43e25d78c7ceb26beac9b4"
+    },
+    {
+      "path": "packages/huttonr_bootstrap3-assets/assets/bootstrap/fonts/glyphicons-halflings-regular.woff2",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/huttonr_bootstrap3-assets/assets/bootstrap/fonts/glyphicons-halflings-regular.woff2",
+      "size": 18028,
+      "hash": "b3253b854b958bb4f2e4c2dae5ff45c8237dc1d6"
+    },
+    {
+      "path": "app/d3.js",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/d3.js",
+      "size": 337839,
+      "hash": "3df3a8ce762c9010ee958e18e911090f20116809"
+    },
+    {
+      "path": "app/personality-sunburst-chart.js",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/personality-sunburst-chart.js",
+      "size": 42443,
+      "hash": "a63b0f3d2599d1c73cb69222e042a3b0e7236350"
+    },
+    {
+      "path": "app/personality-sunburst-chart.standalone.min.js",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/personality-sunburst-chart.standalone.min.js",
+      "size": 11518,
+      "hash": "cd7c7aa8d63ee34b7fac0697693a484ffa10e4c7"
+    },
+    {
+      "path": "assets/email/avatar-default.jpg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/email/avatar-default.jpg",
+      "size": 672,
+      "hash": "b4a12fda701a89653c9c727e7dc4d4e36dd3f94c"
+    },
+    {
+      "path": "assets/email/btn-app-android.gif",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/email/btn-app-android.gif",
+      "size": 4418,
+      "hash": "1e7b0dc535f9f5549f0e20df19f3ae107ff0a5f6"
+    },
+    {
+      "path": "assets/email/btn-app-ios.gif",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/email/btn-app-ios.gif",
+      "size": 4354,
+      "hash": "5fa873f073a3843aa2068bb842352c2644a0471c"
+    },
+    {
+      "path": "assets/email/buzzy-logo-black-50.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/email/buzzy-logo-black-50.png",
+      "size": 3151,
+      "hash": "cef8386776e0964d129008b7251f0b960ce1188a"
+    },
+    {
+      "path": "assets/email/buzzy-logo-cccccc.jpg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/email/buzzy-logo-cccccc.jpg",
+      "size": 879,
+      "hash": "d1210876a987b9f02fa8686654486af7c0decc79"
+    },
+    {
+      "path": "assets/email/icon-file.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/email/icon-file.png",
+      "size": 449,
+      "hash": "6dbfe65413eaec8aebc8a5314f319c14e8e204ae"
+    },
+    {
+      "path": "assets/email/icon-link.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/email/icon-link.png",
+      "size": 586,
+      "hash": "bf3b8174158b6bea669ddf88e82b0a9fbaad3554"
+    },
+    {
+      "path": "assets/email/icon-map.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/email/icon-map.png",
+      "size": 505,
+      "hash": "35b047cd151332eddf24e0778c3fb0191e009c99"
+    },
+    {
+      "path": "assets/email/icon-twitter.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/email/icon-twitter.png",
+      "size": 483,
+      "hash": "dd36a22e8ef055086c059c37b52b2939be0ec3a5"
+    },
+    {
+      "path": "assets/email/icon-video.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/email/icon-video.png",
+      "size": 516,
+      "hash": "77d4346f9eded94cfb5bedf9af45a53f76001c92"
+    },
+    {
+      "path": "assets/filepicker/en.json",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/filepicker/en.json",
+      "size": 8825,
+      "hash": "da50e654d91e29dcb24197c72f52013c7018f5b6"
+    },
+    {
+      "path": "assets/filepicker/filepicker.css",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/filepicker/filepicker.css",
+      "size": 38625,
+      "hash": "a6031d3f328e669c7900776c73158ff5607c5676"
+    },
+    {
+      "path": "assets/filepicker/filepicker_theme.css",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/filepicker/filepicker_theme.css",
+      "size": 2109,
+      "hash": "0a2553516c7806d419802818d4073b7f2b8f36d6"
+    },
+    {
+      "path": "assets/ico/apple-touch-icon-114x114.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/ico/apple-touch-icon-114x114.png",
+      "size": 4366,
+      "hash": "b54dafc7eb1b905ad14c828e3cee70860f80c1b7"
+    },
+    {
+      "path": "assets/ico/apple-touch-icon-120x120.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/ico/apple-touch-icon-120x120.png",
+      "size": 4667,
+      "hash": "dacd22b272549a4a12273340227df2b510813ce7"
+    },
+    {
+      "path": "assets/ico/apple-touch-icon-144x144.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/ico/apple-touch-icon-144x144.png",
+      "size": 5775,
+      "hash": "1a72d162d7433107e77b55d0345df8b1a03e2328"
+    },
+    {
+      "path": "assets/ico/apple-touch-icon-152x152.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/ico/apple-touch-icon-152x152.png",
+      "size": 6675,
+      "hash": "01169bcfb4d83f26f4d13f05e664e170a41137f6"
+    },
+    {
+      "path": "assets/ico/apple-touch-icon-180x180.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/ico/apple-touch-icon-180x180.png",
+      "size": 8708,
+      "hash": "251b64a59be03defe6bd71472aa23fd8709800b9"
+    },
+    {
+      "path": "assets/ico/apple-touch-icon-57x57.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/ico/apple-touch-icon-57x57.png",
+      "size": 1812,
+      "hash": "4d452242a614838fce10ec1021fb2c63313d0f34"
+    },
+    {
+      "path": "assets/ico/apple-touch-icon-60x60.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/ico/apple-touch-icon-60x60.png",
+      "size": 1846,
+      "hash": "efb48ab987c71474262adbbcd9aed6a1b97c6001"
+    },
+    {
+      "path": "assets/ico/apple-touch-icon-72x72.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/ico/apple-touch-icon-72x72.png",
+      "size": 2397,
+      "hash": "e9c0b9eeafe4d8fd81d3bd63ab7bd1116574bec3"
+    },
+    {
+      "path": "assets/ico/apple-touch-icon-76x76.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/ico/apple-touch-icon-76x76.png",
+      "size": 2429,
+      "hash": "2fd19428e73809d5db6f1374a8847fbf39813d66"
+    },
+    {
+      "path": "assets/ico/apple-touch-icon-precomposed.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/ico/apple-touch-icon-precomposed.png",
+      "size": 9446,
+      "hash": "49ca9039c1c6e66cfb2ba92cb6809fb6b55919cf"
+    },
+    {
+      "path": "assets/ico/apple-touch-icon.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/ico/apple-touch-icon.png",
+      "size": 8708,
+      "hash": "251b64a59be03defe6bd71472aa23fd8709800b9"
+    },
+    {
+      "path": "assets/ico/browserconfig.xml",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/ico/browserconfig.xml",
+      "size": 431,
+      "hash": "a74244e0ac618559f69663d466e898451c6a8a1c"
+    },
+    {
+      "path": "assets/ico/favicon-160x160.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/ico/favicon-160x160.png",
+      "size": 7216,
+      "hash": "6919fbb35364672bbb9b024f237bd3966d5f833f"
+    },
+    {
+      "path": "assets/ico/favicon-16x16.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/ico/favicon-16x16.png",
+      "size": 1340,
+      "hash": "53782ad863e5b55fb95977f9abed1f5137e4c2f5"
+    },
+    {
+      "path": "assets/ico/favicon-192x192.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/ico/favicon-192x192.png",
+      "size": 11711,
+      "hash": "1bbb78bffff3c7a5f17e083a23cd73a49a63221d"
+    },
+    {
+      "path": "assets/ico/favicon-32x32.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/ico/favicon-32x32.png",
+      "size": 1223,
+      "hash": "0fbea591e471d2b0bbb9e6f2afd00771a38954a0"
+    },
+    {
+      "path": "assets/ico/favicon-96x96.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/ico/favicon-96x96.png",
+      "size": 3863,
+      "hash": "851f2523798ef3551d0e2c60df2be31804474dfd"
+    },
+    {
+      "path": "assets/ico/favicon.ico",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/ico/favicon.ico",
+      "size": 15086,
+      "hash": "790f3af1d5a2363195153f897e6a393e317018ef"
+    },
+    {
+      "path": "assets/ico/mstile-144x144.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/ico/mstile-144x144.png",
+      "size": 2594,
+      "hash": "fa194a5a42a9b4145ed8aefaeaa433f000d8ae7e"
+    },
+    {
+      "path": "assets/ico/mstile-150x150.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/ico/mstile-150x150.png",
+      "size": 2647,
+      "hash": "cce320d89c5e96a3841d9295aae9134b49b7d393"
+    },
+    {
+      "path": "assets/ico/mstile-310x150.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/ico/mstile-310x150.png",
+      "size": 2906,
+      "hash": "681615b3b306a29c3eb2b46a0848e2dafd7d35eb"
+    },
+    {
+      "path": "assets/ico/mstile-310x310.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/ico/mstile-310x310.png",
+      "size": 5967,
+      "hash": "1963eb90fcb3c9cf3db632a2a2a5140e36fa55e5"
+    },
+    {
+      "path": "assets/ico/mstile-70x70.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/ico/mstile-70x70.png",
+      "size": 1828,
+      "hash": "21fbbe85de06c224b9f6e50480221d8cd701fcf6"
+    },
+    {
+      "path": "assets/icons/android_hdpi.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/icons/android_hdpi.png",
+      "size": 3116,
+      "hash": "ce3c488dcba9c17a16e165cbb8daf41389c66931"
+    },
+    {
+      "path": "assets/icons/android_ldpi.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/icons/android_ldpi.png",
+      "size": 1532,
+      "hash": "390ee264261210179477136f1f670f9fd0ea7234"
+    },
+    {
+      "path": "assets/icons/android_mdpi.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/icons/android_mdpi.png",
+      "size": 1939,
+      "hash": "ee31790b44101114073ec2f0e74ddf505f73c431"
+    },
+    {
+      "path": "assets/icons/android_xhdpi.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/icons/android_xhdpi.png",
+      "size": 4964,
+      "hash": "3bed763fd6cc06135708bd49bace061faf6a89e0"
+    },
+    {
+      "path": "assets/icons/android_xxhdpi.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/icons/android_xxhdpi.png",
+      "size": 10572,
+      "hash": "8ccd11769120199805d68206b95b5350629b517f"
+    },
+    {
+      "path": "assets/icons/android_xxxhdpi.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/icons/android_xxxhdpi.png",
+      "size": 18282,
+      "hash": "774802b41baf64a6f2a35b34373f17ff6f1b5b7b"
+    },
+    {
+      "path": "assets/icons/ios_settings.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/icons/ios_settings.png",
+      "size": 1153,
+      "hash": "e5ac944ec0f957756a6eb4e4b33a99d6b3901cc2"
+    },
+    {
+      "path": "assets/icons/ios_settings_2x.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/icons/ios_settings_2x.png",
+      "size": 2354,
+      "hash": "913993ffb2aaa07a499bb1ad2bba5e18f0c8d932"
+    },
+    {
+      "path": "assets/icons/ios_settings_3x.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/icons/ios_settings_3x.png",
+      "size": 4289,
+      "hash": "e176c6454f38b15a690ed40bb596c580a52d693b"
+    },
+    {
+      "path": "assets/icons/ios_spotlight.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/icons/ios_spotlight.png",
+      "size": 1586,
+      "hash": "25d9745fdfbc31e4a0edb48fe6d553f58f83ce5e"
+    },
+    {
+      "path": "assets/icons/ios_spotlight_2x.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/icons/ios_spotlight_2x.png",
+      "size": 3772,
+      "hash": "505e05effdc1412673d7cda8ad403ebf17a43789"
+    },
+    {
+      "path": "assets/icons/ipad.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/icons/ipad.png",
+      "size": 3391,
+      "hash": "48a9bec14bde84538dfa87b5cf379c4617c7d788"
+    },
+    {
+      "path": "assets/icons/ipad_2x.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/icons/ipad_2x.png",
+      "size": 11605,
+      "hash": "60e1b794caa8a267d7844f9239d796bd0ec3d28d"
+    },
+    {
+      "path": "assets/icons/ipad_pro.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/icons/ipad_pro.png",
+      "size": 13891,
+      "hash": "e72b3184042834f820d26bb8c3fe26d09ad7595f"
+    },
+    {
+      "path": "assets/icons/iphone.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/icons/iphone.png",
+      "size": 6299,
+      "hash": "a51337a3da64980fd652d375b715f61397b6f56a"
+    },
+    {
+      "path": "assets/icons/iphone_2x.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/icons/iphone_2x.png",
+      "size": 7403,
+      "hash": "43f19c8ce1e664b2eee2e54f05f137001b5e8eb4"
+    },
+    {
+      "path": "assets/icons/iphone_3x.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/icons/iphone_3x.png",
+      "size": 16152,
+      "hash": "176f300c489218af20df445a3693c24ee0877779"
+    },
+    {
+      "path": "assets/img/avatar-group.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/img/avatar-group.png",
+      "size": 6144,
+      "hash": "6277379fcdac3f89d5bdbb9de3339a594314a9ba"
+    },
+    {
+      "path": "assets/img/avatar.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/img/avatar.png",
+      "size": 4166,
+      "hash": "0b2e6c4f20b0466e293357167ded15edcfb9d8cb"
+    },
+    {
+      "path": "assets/img/buzzy-logo-inv.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/img/buzzy-logo-inv.png",
+      "size": 7008,
+      "hash": "f063f390a73f38643287ce1e557b9366b0f1d244"
+    },
+    {
+      "path": "assets/img/dummy-corner.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/img/dummy-corner.png",
+      "size": 453,
+      "hash": "25f2383ccfe6dff9972558b17f155c20f907ab88"
+    },
+    {
+      "path": "assets/img/giphy_horizontal_lightbg.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/img/giphy_horizontal_lightbg.png",
+      "size": 1570,
+      "hash": "144464f0f55e3117d8a03762e666d8263d9796ac"
+    },
+    {
+      "path": "assets/img/help-payment-setup.jpg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/img/help-payment-setup.jpg",
+      "size": 117640,
+      "hash": "f96fa69c594d3fb639234c65c656bc260e196151"
+    },
+    {
+      "path": "assets/img/hero-bg-skydive-jan16.jpg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/img/hero-bg-skydive-jan16.jpg",
+      "size": 122938,
+      "hash": "0124bf46768340e53b4aff13040929125078b0c4"
+    },
+    {
+      "path": "assets/img/hero-bg.jpg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/img/hero-bg.jpg",
+      "size": 38336,
+      "hash": "a3aa0815820c989b58de83709fdb021b0c5b748c"
+    },
+    {
+      "path": "assets/img/landing-content-screen-white.jpg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/img/landing-content-screen-white.jpg",
+      "size": 27447,
+      "hash": "8510c76141a9913d2d23b2d5139d84fcd955406f"
+    },
+    {
+      "path": "assets/img/logo-outlook.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/img/logo-outlook.png",
+      "size": 871,
+      "hash": "5f56566ee016d61412f1ce636e6789c81b8ffd29"
+    },
+    {
+      "path": "assets/img/logo-windows.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/img/logo-windows.png",
+      "size": 2128,
+      "hash": "cb0c976bab7423c2adf5c5ef819a8d026c9be9ab"
+    },
+    {
+      "path": "assets/img/placeholder-cover-50-1600.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/img/placeholder-cover-50-1600.png",
+      "size": 37462,
+      "hash": "6942b93099c4fd821cc49c4f2a15bd2a5c444b9d"
+    },
+    {
+      "path": "assets/img/placeholder-cover-crimson-1600.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/img/placeholder-cover-crimson-1600.png",
+      "size": 37161,
+      "hash": "2753142df81b820f682188459b3084f564d0ba04"
+    },
+    {
+      "path": "assets/img/placeholder-cta-button-img.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/img/placeholder-cta-button-img.png",
+      "size": 3866,
+      "hash": "39aaa471df669cf2e2c40522cbdc92ad13bdb1aa"
+    },
+    {
+      "path": "assets/img/placeholder-gallery.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/img/placeholder-gallery.png",
+      "size": 2276,
+      "hash": "0b482d47162dcfe8a5d2a788c5e7e95d62f8428c"
+    },
+    {
+      "path": "assets/img/placeholder-thumb-50.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/img/placeholder-thumb-50.png",
+      "size": 13885,
+      "hash": "14890e5dc17975afd1692cb5039c99365efaf6f0"
+    },
+    {
+      "path": "assets/img/placeholder-thumb-logo.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/img/placeholder-thumb-logo.png",
+      "size": 22664,
+      "hash": "4770a3cb027343685bb07477bfd71522abb5d5cf"
+    },
+    {
+      "path": "assets/img/preview_phone.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/img/preview_phone.png",
+      "size": 16544,
+      "hash": "32787ab1e61ab36baad66a8a0779924baadc944b"
+    },
+    {
+      "path": "assets/img/preview_tablet.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/img/preview_tablet.png",
+      "size": 68449,
+      "hash": "e503bfe88a787ed8ac291aa742926f6899ac20ba"
+    },
+    {
+      "path": "assets/img/sample-avatar.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/img/sample-avatar.png",
+      "size": 562523,
+      "hash": "bd734c4561f54e61f6f45d30f2888afcddac49f0"
+    },
+    {
+      "path": "assets/sounds/Purr.aiff",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/sounds/Purr.aiff",
+      "size": 85610,
+      "hash": "8754345d615680ab7013d8c0606379b67c30be97"
+    },
+    {
+      "path": "assets/splashes/android_hdpi_landscape.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/splashes/android_hdpi_landscape.png",
+      "size": 2970,
+      "hash": "a695819706420072fab960f4e94eb7f2e91d2cb8"
+    },
+    {
+      "path": "assets/splashes/android_hdpi_portrait.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/splashes/android_hdpi_portrait.png",
+      "size": 3371,
+      "hash": "2aaf6683b05c5d4a77336e8170e943ffae361198"
+    },
+    {
+      "path": "assets/splashes/android_ldpi_landscape.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/splashes/android_ldpi_landscape.png",
+      "size": 1236,
+      "hash": "e06805e946e79b3187cc8bae3d93fb9ff74623f4"
+    },
+    {
+      "path": "assets/splashes/android_ldpi_portrait.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/splashes/android_ldpi_portrait.png",
+      "size": 965,
+      "hash": "701a4a2a1f7db15b562f9dd22753caa1115206ec"
+    },
+    {
+      "path": "assets/splashes/android_mdpi_landscape.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/splashes/android_mdpi_landscape.png",
+      "size": 1783,
+      "hash": "70feded5e48cd2691ab37c044753a6562bf36aa7"
+    },
+    {
+      "path": "assets/splashes/android_mdpi_portrait.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/splashes/android_mdpi_portrait.png",
+      "size": 2059,
+      "hash": "00f8d655963108d3991baa46d43381f51be76e58"
+    },
+    {
+      "path": "assets/splashes/android_xhdpi_landscape.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/splashes/android_xhdpi_landscape.png",
+      "size": 5005,
+      "hash": "981d6b5f9be1a698ce6432bcbde4c3c499b1263a"
+    },
+    {
+      "path": "assets/splashes/android_xhdpi_portrait.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/splashes/android_xhdpi_portrait.png",
+      "size": 6007,
+      "hash": "8685aeaf4aaee21b81abd6be3d86fca198b2d0d2"
+    },
+    {
+      "path": "assets/splashes/android_xxhdpi_landscape.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/splashes/android_xxhdpi_landscape.png",
+      "size": 6649,
+      "hash": "05006d30dd1384c62899bf6ddf139fd34aab5026"
+    },
+    {
+      "path": "assets/splashes/android_xxhdpi_portrait.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/splashes/android_xxhdpi_portrait.png",
+      "size": 7274,
+      "hash": "03ff8500b0a189c2fc9b13fb804bd246d5f873fe"
+    },
+    {
+      "path": "assets/splashes/ipad_landscape.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/splashes/ipad_landscape.png",
+      "size": 4474,
+      "hash": "e63f04e214e9517ee87177ed8524a90357002f58"
+    },
+    {
+      "path": "assets/splashes/ipad_landscape_2x.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/splashes/ipad_landscape_2x.png",
+      "size": 10729,
+      "hash": "77e6ed5b1f550f1d8672b1ee03492e561e91a410"
+    },
+    {
+      "path": "assets/splashes/ipad_portrait.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/splashes/ipad_portrait.png",
+      "size": 4885,
+      "hash": "41cc322e082055f87da09ab98da0bc983d404372"
+    },
+    {
+      "path": "assets/splashes/ipad_portrait_2x.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/splashes/ipad_portrait_2x.png",
+      "size": 11534,
+      "hash": "b0bfeecbdec4a73d64530f17ceaf85a1ff828d1f"
+    },
+    {
+      "path": "assets/splashes/iphone.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/splashes/iphone.png",
+      "size": 5865,
+      "hash": "300b5355f8ebeb2d441243732f51aab1f0e0205f"
+    },
+    {
+      "path": "assets/splashes/iphone5.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/splashes/iphone5.png",
+      "size": 5195,
+      "hash": "50c1a7208b046b78a04b3025c4511b62cbc7d66c"
+    },
+    {
+      "path": "assets/splashes/iphone6.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/splashes/iphone6.png",
+      "size": 6274,
+      "hash": "8f8f65d6ae96fdd9f07511eaddeadd29ef9c1174"
+    },
+    {
+      "path": "assets/splashes/iphone6p_landscape.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/splashes/iphone6p_landscape.png",
+      "size": 8817,
+      "hash": "25c0c82877371a43df0fa51ae525a86fa1584c93"
+    },
+    {
+      "path": "assets/splashes/iphone6p_portrait.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/splashes/iphone6p_portrait.png",
+      "size": 10585,
+      "hash": "545a3f6781764704b18a86fe767ab8f0e5c07aae"
+    },
+    {
+      "path": "assets/splashes/iphone_2x.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/splashes/iphone_2x.png",
+      "size": 4439,
+      "hash": "b1e839f96d28a2cd6a463804a483f3e4da4f387f"
+    },
+    {
+      "path": "assets/email/promos/InBuzz_App.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/email/promos/InBuzz_App.png",
+      "size": 38325,
+      "hash": "71db1fa2440e3ac99e3aa492621b8538125ed835"
+    },
+    {
+      "path": "assets/email/promos/InBuzz_Comm_lists.gif",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/email/promos/InBuzz_Comm_lists.gif",
+      "size": 31227,
+      "hash": "e42c8673b5b095ba895c68e73fbf9943658ff67f"
+    },
+    {
+      "path": "assets/email/promos/InBuzz_Comm_people.gif",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/email/promos/InBuzz_Comm_people.gif",
+      "size": 34347,
+      "hash": "5a033c2d133be3ca310a6752f9754ea751250cc3"
+    },
+    {
+      "path": "assets/email/promos/InBuzz_Comm_school_sport.gif",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/email/promos/InBuzz_Comm_school_sport.gif",
+      "size": 40101,
+      "hash": "ca914033546f132eafa61ef4ca0f5bc8522cd75b"
+    },
+    {
+      "path": "assets/email/promos/InBuzz_template.gif",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/email/promos/InBuzz_template.gif",
+      "size": 156499,
+      "hash": "025ba866a9a96ada5537bea383b2e5adadec39dd"
+    },
+    {
+      "path": "assets/img/setup-tour/setup-tour-addcontent.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/img/setup-tour/setup-tour-addcontent.png",
+      "size": 12473,
+      "hash": "bb0ed50158cae2d698d62b18bb2e06a3274d665b"
+    },
+    {
+      "path": "assets/img/setup-tour/setup-tour-addpeople.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/img/setup-tour/setup-tour-addpeople.png",
+      "size": 11023,
+      "hash": "d6b7c443821924bafe61d551821c5518e436710b"
+    },
+    {
+      "path": "assets/img/setup-tour/setup-tour-commentjump.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/img/setup-tour/setup-tour-commentjump.png",
+      "size": 9178,
+      "hash": "f5dfc9fab49d1209113a31d7487f5d515ddaa163"
+    },
+    {
+      "path": "assets/img/setup-tour/setup-tour-create.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/img/setup-tour/setup-tour-create.png",
+      "size": 11510,
+      "hash": "ebd0fbba6cc64fa9449045b638e23e56a2cd4706"
+    },
+    {
+      "path": "assets/img/setup-tour/setup-tour-publish.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/assets/img/setup-tour/setup-tour-publish.png",
+      "size": 9229,
+      "hash": "0535310574b6d6e8a5ca1075dcd7478dc965698a"
+    },
+    {
+      "path": "head.html",
+      "where": "internal",
+      "type": "head",
+      "hash": "651af94aafc0e265cccd13011d98f615882a7d45"
+    }
+  ],
+  "cordovaCompatibilityVersions": {
+    "android": "b2a7658c3d89e75367a9879074aab568ee440fa9",
+    "ios": "838e6a31e97c14b6f91c2ab242e624e1e0b34b97"
+  }
+}
